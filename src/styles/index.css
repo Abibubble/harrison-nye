@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Zeyada;
+  src: url(https://fonts.googleapis.com/css2?family=Zeyada&display=swap);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #b899ff;
+  font-family: Zeyada, cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
