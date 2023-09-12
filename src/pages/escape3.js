@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 import PasswordInput from '../components/password-input'
 
-export default function Home() {
+export default function Escape2() {
   return (
     <Page>
-      <h1>Hi there!</h1>
-      <h2>You're here because you're important to Conor and Abi</h2>
-      <h3>
-        We've made a little escape room for you - There's a cool prize at the
-        end!
-      </h3>
+      <h1>Nicely done!</h1>
       <p>
-        Let's start easy. Try to guess our <u>password</u>!
+        Ok, that was definitely too easy! For the next one, solve the pigpen
+        cypher below
       </p>
       <PasswordInput />
     </Page>

@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 
-function Rsvp() {
+export default function Rsvp() {
   return (
     <Page>
       <p>Rsvp</p>
     </Page>
   )
 }
-
-export default Rsvp
 
 const Page = styled.div`
   height: 100%;

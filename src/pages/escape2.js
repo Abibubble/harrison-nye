@@ -1,15 +1,12 @@
 import styled from 'styled-components'
+import PasswordInput from '../components/password-input'
 
-import Header from '../components/header'
-import Carousel from '../components/carousel'
-import RsvpLink from '../components/rsvp-link'
-
-export default function Welcome() {
+export default function Escape2() {
   return (
     <Page>
-      <Header />
-      <Carousel />
-      <RsvpLink />
+      <h1>Nicely done!</h1>
+      <p>Ok, that was definitely too easy! For the next one...</p>
+      <PasswordInput />
     </Page>
   )
 }

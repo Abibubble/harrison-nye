@@ -13,8 +13,4 @@ Steps
 - Code base website
 - RSVP page
 - RSVP form
-- Database to hold responses
-
-Pigpen cypher
-Capitalised random letters
-Password to end
+- Database to hold responses? Or email?
