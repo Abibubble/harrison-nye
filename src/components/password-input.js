@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom'
 
 export default function PasswordInput() {
   const navigate = useNavigate()
-  const firstPassword = 'password'
-  const secondPassword = 'next'
-  const finalPassword = 'final'
+  const firstPassword = process.env.REACT_APP_FIRST_PASSWORD
+  const secondPassword = process.env.REACT_APP_SECOND_PASSWORD
+  const finalPassword = process.env.REACT_APP_FINAL_PASSWORD
 
   function checkPassword() {
     const pathname = window.location.pathname
@@ -35,7 +35,10 @@ export default function PasswordInput() {
       <Label for='password'>Enter here:</Label>
       <Input type='text' id='password' name='password' />
       <Button onClick={checkPassword}>Submit</Button>
-      <OhNo id='oh-no'>Oops, try again!</OhNo>
+      <br />
+      <small>
+        All codes will be lowercase, and there will be no special characters
+      </small>
     </Form>
   )
 }
@@ -71,9 +74,4 @@ const Button = styled.button`
   border: 2px solid grey;
   background-color: #93c2f5;
   font-size: 1.5rem;
-`
-
-const OhNo = styled.p`
-  margin: 8px;
-  display: none;
 `
