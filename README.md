@@ -9,8 +9,15 @@
 
 Steps
 
-- Escape room style site, gives a short link to the vercel app, that can be how we announce it
 - Code base website
 - RSVP page
 - RSVP form
 - Database to hold responses? Or email?
+
+To do
+
+- Change font on mobile
+- Fix carousel
+- Make escape less cheesy
+- Build RSVP page
+- Sort email functionality - emailJS?
