@@ -3,7 +3,7 @@
 - Photo carousel
 - Dress code
 - RSVP
-- Food choices
+- Food choices?
 - Allergy info
 - Day plan
 
@@ -14,3 +14,7 @@ Steps
 - RSVP page
 - RSVP form
 - Database to hold responses
+
+Pigpen cypher
+Capitalised random letters
+Password to end
