@@ -23,6 +23,7 @@ const Page = styled.div`
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  padding: 8px;
 
   @media (min-width: 768px) {
     width: 50%;

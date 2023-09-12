@@ -74,4 +74,5 @@ const Button = styled.button`
   border: 2px solid grey;
   background-color: #93c2f5;
   font-size: 1.5rem;
+  padding: 0 16px;
 `
