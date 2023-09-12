@@ -9,6 +9,7 @@
 
 Steps
 
+- Escape room style site, gives a short link to the vercel app, that can be how we announce it
 - Code base website
 - RSVP page
 - RSVP form

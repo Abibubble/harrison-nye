@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 import Wrapper from './wrapper'
 
-export default function Header() {
+export default function RsvpLink() {
   return (
     <Wrapper>
-      <h1>Abi Harrison & Conor Nye</h1>
-      <h2>12th May 2024</h2>
+      <a href='/rsvp'>RSVP here</a>
     </Wrapper>
   )
 }

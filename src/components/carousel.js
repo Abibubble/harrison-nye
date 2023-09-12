@@ -16,21 +16,25 @@ export default function Carousel() {
     } else {
       setCount(currentImage + 1)
     }
-  }, 3000)
+  }, 5000)
 
   return (
-    <Wrapper>
+    <Div>
       <CarouselImage
         src={require(`../images/${imageData[currentImage].src}`)}
         alt={imageData[currentImage].alt}
       />
-    </Wrapper>
+    </Div>
   )
 }
 
-const Wrapper = styled.div`
-  margin: 0 8px 24px;
+const Div = styled.div`
+  margin: 16px;
   border-radius: 8px;
+
+  @media (min-width: 768px) {
+    margin: 24px 0;
+  }
 `
 
 const CarouselImage = styled.img`
@@ -39,4 +43,8 @@ const CarouselImage = styled.img`
   max-height: 300px;
   object-fit: cover;
   border-radius: 8px;
+
+  @media (min-width: 768px) {
+    max-height: 500px;
+  }
 `

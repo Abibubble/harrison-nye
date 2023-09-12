@@ -1,22 +1,19 @@
-import styled from 'styled-components'
-
-import Header from './components/header'
-import Carousel from './components/carousel'
-import RsvpForm from './components/rsvp-form'
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages'
+import Welcome from './pages/welcome'
+import Rsvp from './pages/rsvp'
 
 function App() {
   return (
-    <Page>
-      <Header />
-      <Carousel />
-      <RsvpForm />
-    </Page>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/welcome' element={<Welcome />} />
+        <Route path='/rsvp' element={<Rsvp />} />
+      </Routes>
+    </Router>
   )
 }
 
 export default App
-
-const Page = styled.div`
-  height: 100%;
-  text-align: center;
-`
