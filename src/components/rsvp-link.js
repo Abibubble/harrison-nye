@@ -4,7 +4,11 @@ import Wrapper from './wrapper'
 export default function RsvpLink() {
   return (
     <Wrapper>
-      <a href='/rsvp'>RSVP here</a>
+      <Button href='/rsvp'>Click here to RSVP</Button>
     </Wrapper>
   )
 }
+
+const Button = styled.a`
+  text-decoration: none;
+`

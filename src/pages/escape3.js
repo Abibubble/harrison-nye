@@ -4,11 +4,16 @@ import PasswordInput from '../components/password-input'
 export default function Escape2() {
   return (
     <Page>
-      <h1>Nicely done!</h1>
-      <p>
-        Ok, that was definitely too easy! For the next one, solve the pigpen
-        cypher below
-      </p>
+      <MainText>
+        <h1>Nicely done!</h1>
+        <p>
+          Ok, that was definitely too easy! For the next one, solve the pigpen
+          cypher below
+        </p>
+      </MainText>
+      <Clue>
+        <p>Clue here</p>
+      </Clue>
       <PasswordInput />
     </Page>
   )
@@ -24,3 +29,9 @@ const Page = styled.div`
     width: 50%;
   }
 `
+
+const MainText = styled.div`
+  margin: 16px;
+`
+
+const Clue = MainText

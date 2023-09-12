@@ -4,8 +4,18 @@ import Wrapper from './wrapper'
 export default function Header() {
   return (
     <Wrapper>
-      <h1>Abi Harrison & Conor Nye</h1>
-      <h2>12th May 2024</h2>
+      <Container>
+        <p>You are invited to the wedding reception of</p>
+        <h1>Abi Harrison & Conor Nye</h1>
+        <p>On</p>
+        <h2>12th May 2024</h2>
+        <p>At</p>
+        <h2>Somewhere</h2>
+      </Container>
     </Wrapper>
   )
 }
+
+const Container = styled.div`
+  padding: 16px;
+`
