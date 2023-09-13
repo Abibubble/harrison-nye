@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import styled from 'styled-components'
-import imageData from './imageData'
+import imageData from '../data/image-data'
+import styles from '../data/styles'
 
 // Need next / previous arrow buttons
 // Need to add a fade in / out transition
@@ -29,11 +30,11 @@ export default function Carousel() {
 }
 
 const Div = styled.div`
-  margin: 16px;
-  border-radius: 8px;
+  margin: ${styles.spacer.small}};
+  border-radius: ${styles.spacer.tiny};
 
-  @media (min-width: 768px) {
-    margin: 24px 0;
+  @media (min-width: ${styles.breakpoint.medium}}) {
+    margin: ${styles.spacer.medium} 0;
   }
 `
 
@@ -42,9 +43,9 @@ const CarouselImage = styled.img`
   height: 100%;
   max-height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: ${styles.spacer.tiny};
 
-  @media (min-width: 768px) {
+  @media (min-width: ${styles.breakpoint.medium}}) {
     max-height: 500px;
   }
 `

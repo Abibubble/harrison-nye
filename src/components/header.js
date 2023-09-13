@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Wrapper from './wrapper'
+import styles from '../data/styles'
 
 export default function Header() {
   return (
@@ -17,5 +18,5 @@ export default function Header() {
 }
 
 const Container = styled.div`
-  padding: 16px;
+  padding: ${styles.spacer.small};
 `

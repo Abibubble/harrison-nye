@@ -1,15 +1,16 @@
 import styled from 'styled-components'
+import styles from '../data/styles'
 
 export default function Wrapper({ ...props }) {
   return <StyledWrapper>{props.children}</StyledWrapper>
 }
 
 const StyledWrapper = styled.div`
-  margin: 16px;
-  border-radius: 8px;
-  background-color: #93c2f5;
+  margin: ${styles.spacer.small};
+  border-radius: ${styles.spacer.tiny};
+  background-color: ${styles.colour.blue};
 
-  @media (min-width: 768px) {
-    margin: 24px 0;
+  @media (min-width: ${styles.breakpoint.medium}) {
+    margin: ${styles.spacer.medium} 0;
   }
 `

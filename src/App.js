@@ -6,7 +6,7 @@ import Rsvp from './pages/rsvp'
 import Escape2 from './pages/escape2'
 import Escape3 from './pages/escape3'
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Routes>
@@ -19,5 +19,3 @@ function App() {
     </Router>
   )
 }
-
-export default App

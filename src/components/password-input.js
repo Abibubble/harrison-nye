@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
+import styles from '../data/styles'
 
 export default function PasswordInput() {
   const navigate = useNavigate()
@@ -44,35 +45,35 @@ export default function PasswordInput() {
 }
 
 const Form = styled.form`
-  margin: 16px;
-  border-radius: 8px;
+  margin: ${styles.spacer.small};
+  border-radius: ${styles.spacer.tiny};
 
-  @media (min-width: 768px) {
-    margin: 24px 0;
+  @media (min-width: ${styles.breakpoint.medium}) {
+    margin: ${styles.spacer.medium} 0;
   }
 `
 
 const Label = styled.label`
-  margin: 8px;
+  margin: ${styles.spacer.tiny};
   font-size: 1.5rem;
 `
 
 const Input = styled.input`
   width: 50%;
-  border-radius: 8px;
-  border: 2px solid grey;
+  border-radius: ${styles.spacer.tiny};
+  border: ${styles.spacer.fine} solid grey;
   font-size: 1.5rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${styles.breakpoint.medium}) {
     width: 30%;
   }
 `
 
 const Button = styled.button`
-  margin: 8px;
-  border-radius: 8px;
-  border: 2px solid grey;
+  margin: ${styles.spacer.tiny};
+  border-radius: ${styles.spacer.tiny};
+  border: ${styles.spacer.fine} solid grey;
   background-color: #93c2f5;
   font-size: 1.5rem;
-  padding: 0 16px;
+  padding: 0 ${styles.spacer.small};
 `

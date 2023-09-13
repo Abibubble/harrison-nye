@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import PasswordInput from '../components/password-input'
+import styles from '../data/styles'
 
 export default function Escape2() {
   return (
@@ -25,13 +26,13 @@ const Page = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${styles.breakpoint.medium}) {
     width: 50%;
   }
 `
 
 const MainText = styled.div`
-  margin: 16px;
+  margin: ${styles.spacer.small};
 `
 
 const Clue = MainText
