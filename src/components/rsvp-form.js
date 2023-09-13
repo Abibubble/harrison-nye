@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import styled from 'styled-components'
 import emailjs from '@emailjs/browser'
 import styles from '../data/styles'
+import SubmitButton from './submit-button'
 
 export default function RsvpForm() {
   const form = useRef()
@@ -27,7 +28,7 @@ export default function RsvpForm() {
   }
 
   return (
-    <Form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail}>
       <Label>Name</Label>
       <Input type='text' name='user_name' />
       <Label>Email</Label>
@@ -45,16 +46,10 @@ export default function RsvpForm() {
       <textarea name='allergy' />
       <Label>Any dietary restrictions?</Label>
       <textarea name='dietary' />
-      <Submit type='submit' value='Send' />
-    </Form>
+      <SubmitButton value='Send' />
+    </form>
   )
 }
-
-const Form = styled.form`
-  background-color: ${styles.colour.blue};
-  border-radius: ${styles.spacer.tiny};
-  text-align: center;
-`
 
 const Label = styled.label`
   display: block;
@@ -65,5 +60,3 @@ const Input = styled.input`
   display: block;
   margin: 0 auto;
 `
-
-const Submit = styled(Input)``

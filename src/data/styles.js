@@ -16,6 +16,7 @@ const styles = {
   colour: {
     purple: '#be94f7',
     blue: '#93c2f5',
+    transparentBlue: 'rgba(147, 194, 245, 0.3)',
   },
 }
 

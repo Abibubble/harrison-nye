@@ -4,10 +4,17 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #be94f7;
+  background: rgb(102, 51, 153);
+  background: linear-gradient(
+    0deg,
+    rgba(102, 51, 153, 1) 0%,
+    rgba(190, 148, 247, 1) 33%,
+    rgba(147, 194, 245, 1) 66%,
+    rgba(65, 105, 225, 1) 100%
+  );
   font-family: Zeyada, cursive;
 }
 

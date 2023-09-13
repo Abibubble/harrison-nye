@@ -4,24 +4,14 @@ import styles from '../data/styles'
 import Header from '../components/header'
 import Carousel from '../components/carousel'
 import RsvpLink from '../components/rsvp-link'
+import Wrapper from '../components/wrapper'
 
 export default function Welcome() {
   return (
-    <Page>
+    <Wrapper>
       <Header />
       <Carousel />
       <RsvpLink />
-    </Page>
+    </Wrapper>
   )
 }
-
-const Page = styled.div`
-  height: 100%;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-
-  @media (min-width: ${styles.breakpoint.medium}) {
-    width: 50%;
-  }
-`

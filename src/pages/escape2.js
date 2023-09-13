@@ -1,35 +1,23 @@
 import styled from 'styled-components'
 import PasswordInput from '../components/password-input'
 import styles from '../data/styles'
+import Wrapper from '../components/wrapper'
 
 export default function Escape2() {
   return (
-    <Page>
-      <MainText>
+    <Wrapper>
+      <PageSection>
         <h1>Nicely done!</h1>
         <p>Ok, that was definitely too easy! For the next one...</p>
-      </MainText>
-      <Clue>
+      </PageSection>
+      <PageSection>
         <p>Clue here</p>
-      </Clue>
+      </PageSection>
       <PasswordInput />
-    </Page>
+    </Wrapper>
   )
 }
 
-const Page = styled.div`
-  height: 100%;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-
-  @media (min-width: ${styles.breakpoint.medium}) {
-    width: 50%;
-  }
-`
-
-const MainText = styled.div`
+const PageSection = styled.div`
   margin: ${styles.spacer.small};
 `
-
-const Clue = MainText

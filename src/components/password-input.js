@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
 import styles from '../data/styles'
+import SubmitButton from './submit-button'
 
 export default function PasswordInput() {
   const navigate = useNavigate()
@@ -32,10 +33,10 @@ export default function PasswordInput() {
   }
 
   return (
-    <Form>
+    <Form onSubmit={checkPassword}>
       <Label for='password'>Enter here:</Label>
       <Input type='text' id='password' name='password' />
-      <Button onClick={checkPassword}>Submit</Button>
+      <SubmitButton value='Submit' />
       <br />
       <small>
         All codes will be lowercase, and there will be no special characters
@@ -67,13 +68,4 @@ const Input = styled.input`
   @media (min-width: ${styles.breakpoint.medium}) {
     width: 30%;
   }
-`
-
-const Button = styled.button`
-  margin: ${styles.spacer.tiny};
-  border-radius: ${styles.spacer.tiny};
-  border: ${styles.spacer.fine} solid grey;
-  background-color: #93c2f5;
-  font-size: 1.5rem;
-  padding: 0 ${styles.spacer.small};
 `
