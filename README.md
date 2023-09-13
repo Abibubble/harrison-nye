@@ -12,12 +12,9 @@ Steps
 - Code base website
 - RSVP page
 - RSVP form
-- Database to hold responses? Or email?
+- Email responses
 
 To do
 
-- Change font on mobile
 - Fix carousel
 - Make escape less cheesy
-- Build RSVP page
-- Sort email functionality - emailJS?

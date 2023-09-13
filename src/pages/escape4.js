@@ -11,10 +11,18 @@ export default function Escape2() {
     <Wrapper>
       <PageSection>
         <Title>Well done!</Title>
-        <Intro>For the next one, solve the pigpen cipher below</Intro>
+        <Intro>For the last one, solve this riddle</Intro>
       </PageSection>
       <PageSection>
-        <Pigpen>gerbil</Pigpen>
+        <Clue>
+          Before you get engaged
+          <br />
+          In a small box it is carried
+          <br />
+          It is what gets exchanged
+          <br />
+          On the day that you get married
+        </Clue>
       </PageSection>
       <PasswordInput />
     </Wrapper>
@@ -23,9 +31,4 @@ export default function Escape2() {
 
 const PageSection = styled.div`
   margin: ${styles.spacer.small};
-`
-
-const Pigpen = styled(Clue)`
-  font-family: 'pigpen', sans-serif;
-  font-size: 2.5rem;
 `

@@ -7,6 +7,7 @@ export default function PasswordInput() {
   const navigate = useNavigate()
   const firstPassword = process.env.REACT_APP_FIRST_PASSWORD
   const secondPassword = process.env.REACT_APP_SECOND_PASSWORD
+  const thirdPassword = process.env.REACT_APP_THIRD_PASSWORD
   const finalPassword = process.env.REACT_APP_FINAL_PASSWORD
 
   function checkPassword() {
@@ -27,6 +28,10 @@ export default function PasswordInput() {
           ? navigate('/escape3', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/escape3') {
+        passwordInput === thirdPassword
+          ? navigate('/escape4', { replace: true })
+          : alert('Oops, try again!')
+      } else if (pathname === '/escape4') {
         passwordInput === finalPassword
           ? navigate('/welcome', { replace: true })
           : alert('Oops, try again!')
@@ -40,10 +45,7 @@ export default function PasswordInput() {
       <Input type='text' id='password-input' name='password' />
       <SubmitButton value='Submit' />
       <br />
-      <SmallText>
-        All codes will be lowercase, and there will be no special characters.
-        All the clues you need are on this page.
-      </SmallText>
+      <SmallText>All the clues you need are on this page.</SmallText>
     </Form>
   )
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import styles from '../data/styles'
 
 export default function Clue({ ...props }) {
-  return <StyledClue>{props.children}</StyledClue>
+  return <StyledClue className={props.className}>{props.children}</StyledClue>
 }
 
 const StyledClue = styled.p`
