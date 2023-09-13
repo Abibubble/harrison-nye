@@ -38,9 +38,10 @@ export default function PasswordInput() {
       <Input type='text' id='password' name='password' />
       <SubmitButton value='Submit' />
       <br />
-      <small>
-        All codes will be lowercase, and there will be no special characters
-      </small>
+      <SmallText>
+        All codes will be lowercase, and there will be no special characters.
+        All the clues you need are on this page.
+      </SmallText>
     </Form>
   )
 }
@@ -56,7 +57,7 @@ const Form = styled.form`
 
 const Label = styled.label`
   margin: ${styles.spacer.tiny};
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 `
 
 const Input = styled.input`
@@ -68,4 +69,9 @@ const Input = styled.input`
   @media (min-width: ${styles.breakpoint.medium}) {
     width: 30%;
   }
+`
+
+const SmallText = styled.p`
+  font-size: 0.9rem;
+  font-style: italic;
 `
