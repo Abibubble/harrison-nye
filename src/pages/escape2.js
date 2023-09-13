@@ -10,8 +10,8 @@ export default function Escape2() {
   return (
     <Wrapper>
       <PageSection>
-        <Title>Nicely done!</Title>
-        <Intro>Ok, that was definitely too easy! For the next one...</Intro>
+        <Title>Well done!</Title>
+        <Intro>That was definitely too easy. Here's the next clue</Intro>
       </PageSection>
       <PageSection>
         <Clue>
