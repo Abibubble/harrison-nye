@@ -11,21 +11,23 @@ export default function PasswordInput() {
 
   function checkPassword() {
     const pathname = window.location.pathname
-    const passwordInput = document.getElementById('password')
+    const passwordInput = document
+      .getElementById('password-input')
+      .value.toLowerCase()
 
-    if (passwordInput.value === finalPassword) {
+    if (passwordInput === finalPassword) {
       navigate('/welcome', { replace: true })
     } else {
       if (pathname === '/') {
-        passwordInput.value === firstPassword
+        passwordInput === firstPassword
           ? navigate('/escape2', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/escape2') {
-        passwordInput.value === secondPassword
+        passwordInput === secondPassword
           ? navigate('/escape3', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/escape3') {
-        passwordInput.value === finalPassword
+        passwordInput === finalPassword
           ? navigate('/welcome', { replace: true })
           : alert('Oops, try again!')
       }
@@ -35,7 +37,7 @@ export default function PasswordInput() {
   return (
     <Form onSubmit={checkPassword}>
       <Label for='password'>Enter here:</Label>
-      <Input type='text' id='password' name='password' />
+      <Input type='text' id='password-input' name='password' />
       <SubmitButton value='Submit' />
       <br />
       <SmallText>
