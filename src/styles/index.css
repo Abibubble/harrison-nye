@@ -5,6 +5,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'roboto';
+  src: url('../data/roboto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cormorant-garamond';
+  src: url('../data/cormorant-garamond.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'great-vibes';
+  src: url('../data/great-vibes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: 100%;
   min-height: 100vh;
