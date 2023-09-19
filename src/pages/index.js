@@ -19,7 +19,7 @@ export default function Home() {
       </PageSection>
       <PageSection>
         <Clue>
-          Let's start easy. Try to guess our <em>password</em> !
+          Let's start easy. Try to guess our <em>password</em>
         </Clue>
       </PageSection>
       <PasswordInput />

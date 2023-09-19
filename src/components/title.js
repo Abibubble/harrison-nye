@@ -6,6 +6,7 @@ export default function Title({ ...props }) {
 }
 
 const StyledTitle = styled.h1`
+  font-family: 'Great Vibes', Arial, Helvetica, sans-serif;
   font-size: 2rem;
   padding: ${styles.spacer.small};
   background-color: ${styles.colour.blue};

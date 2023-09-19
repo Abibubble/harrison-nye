@@ -15,7 +15,7 @@ export default function Escape2() {
       </PageSection>
       <PageSection>
         <Clue>
-          There's this tune i found
+          there's This tune i found
           <br />
           that makes me thInk of you soMehow,
           <br />

@@ -18,3 +18,6 @@ To do
 
 - Fix carousel
 - Make escape less cheesy
+- Add pigpen diagram
+- Check gerbil on load
+- Reroute on RSVP send & alert
