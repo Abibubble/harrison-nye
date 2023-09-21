@@ -1,31 +1,27 @@
-@import url(http://fonts.googleapis.com/css?family=Cormorant+Garamond);
-@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-
 @font-face {
-  font-family: 'pigpen';
-  src: url('../data/pigpen.otf') format('opentype');
+  font-family: 'Pigpen';
+  src: url('../fonts/pigpen.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url('../data/roboto.ttf') format('truetype');
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'cormorant-garamond';
-  src: url('../data/cormorant-garamond.ttf') format('truetype');
+  font-family: 'Cormorant Garamond';
+  src: url('../fonts/cormorant-garamond.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'great-vibes';
-  src: url('../data/great-vibes.ttf') format('truetype');
+  font-family: 'Great Vibes';
+  src: url('../fonts/great-vibes.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
