@@ -19,7 +19,7 @@ const StyledWrapper = styled.div`
   width: 100vw;
   text-align: center;
   height: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: 'Cormorant Garamond', Arial, Helvetica sans-serif;
 
   ${props =>
