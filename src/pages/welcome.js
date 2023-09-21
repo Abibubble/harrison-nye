@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import styles from '../data/styles'
+import styles from '../styles/styles'
 
 import Invite from '../components/invite'
 import Link from '../components/link'
@@ -8,7 +8,7 @@ import imageData from '../data/image-data'
 
 export default function Welcome() {
   return (
-    <StyledWrapper>
+    <Wrapper wedding>
       <Invite />
       <Image
         src={require(`../images/${imageData[11].src}`)}
@@ -17,7 +17,7 @@ export default function Welcome() {
       <StyledLink href='/rsvp'>RSVP here</StyledLink>
       <StyledLink href='/day-plan'>Day plan</StyledLink>
       <StyledLink href='/dress-code'>Dress code</StyledLink>
-    </StyledWrapper>
+    </Wrapper>
   )
 }
 
@@ -31,10 +31,6 @@ const Image = styled.img`
   @media (min-width: ${styles.breakpoint.medium}}) {
     max-height: 500px;
   }
-`
-
-const StyledWrapper = styled(Wrapper)`
-  background-color: transparent;
 `
 
 const StyledLink = styled(Link)`

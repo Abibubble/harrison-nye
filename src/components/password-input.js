@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
-import styles from '../data/styles'
+import styles from '../styles/styles'
 import SubmitButton from './submit-button'
 
 export default function PasswordInput() {

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import styles from '../data/styles'
+import styles from '../styles/styles'
 
 export default function SubmitButton({ value }) {
   return <Button type='submit' value={value} />

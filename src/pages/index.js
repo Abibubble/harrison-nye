@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PasswordInput from '../components/password-input'
-import styles from '../data/styles'
+import styles from '../styles/styles'
 import Wrapper from '../components/wrapper'
 import Title from '../components/title'
 import Intro from '../components/intro'
@@ -8,7 +8,7 @@ import Clue from '../components/clue'
 
 export default function Home() {
   return (
-    <Wrapper>
+    <Wrapper escape>
       <PageSection>
         <Title>Bubble & Squeak</Title>
         <Intro>

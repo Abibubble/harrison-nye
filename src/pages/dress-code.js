@@ -1,25 +1,20 @@
 import styled from 'styled-components'
 import Wrapper from '../components/wrapper'
-import styles from '../data/styles'
+import styles from '../styles/styles'
 
 export default function DressCode() {
   return (
-    <StyledWrapper>
+    <Wrapper wedding>
       <Container>
         <p>Wear something</p>
         <Button href='/welcome'>Back</Button>
       </Container>
-    </StyledWrapper>
+    </Wrapper>
   )
 }
 
 const Container = styled.div`
   padding: 0 ${styles.spacer.small} ${styles.spacer.small};
-`
-
-const StyledWrapper = styled(Wrapper)`
-  background-color: transparent;
-  padding: 0;
 `
 
 const Button = styled.a`

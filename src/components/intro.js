@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import styles from '../data/styles'
+import styles from '../styles/styles'
 
 export default function Intro({ ...props }) {
   return <StyledIntro>{props.children}</StyledIntro>

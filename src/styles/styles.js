@@ -5,6 +5,7 @@ const styles = {
     small: '16px',
     medium: '24px',
     large: '48px',
+    huge: '72px',
   },
   breakpoint: {
     min: '320px',
@@ -14,9 +15,13 @@ const styles = {
     max: '1140px',
   },
   colour: {
+    black: '#000000',
+    white: '#ffffff',
     purple: '#be94f7',
     blue: '#93c2f5',
     transparentBlue: 'rgba(147, 194, 245, 0.3)',
+    gradient:
+      'linear-gradient(0deg,rgba(102, 51, 153, 1) 0%,rgba(190, 148, 247, 1) 33%,rgba(147, 194, 245, 1) 66%,rgba(65, 105, 225, 1) 100%)',
   },
 }
 
