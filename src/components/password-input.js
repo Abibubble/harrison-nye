@@ -51,7 +51,7 @@ export default function PasswordInput() {
 }
 
 const Form = styled.form`
-  margin: ${styles.spacer.small};
+  padding: ${styles.spacer.small};
   border-radius: ${styles.spacer.tiny};
 
   @media (min-width: ${styles.breakpoint.medium}) {

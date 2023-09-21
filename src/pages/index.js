@@ -28,5 +28,5 @@ export default function Home() {
 }
 
 const PageSection = styled.div`
-  margin: 0 ${styles.spacer.small};
+  padding: ${styles.spacer.small};
 `
