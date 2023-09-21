@@ -20,7 +20,6 @@ const StyledWrapper = styled.div`
   text-align: center;
   height: 100%;
   min-height: 100vh;
-  padding: ${styles.spacer.small} 0;
   font-family: 'Cormorant Garamond', Arial, Helvetica sans-serif;
 
   ${props =>
