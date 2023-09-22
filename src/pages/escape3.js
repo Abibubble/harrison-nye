@@ -10,6 +10,8 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
+import PigpenImage from '../images/pigpen.png'
+
 export default function Escape3() {
   const [isReady, setIsReady] = useState(false)
 
@@ -29,6 +31,7 @@ export default function Escape3() {
         </Clue>
       </PageSection>
       <PasswordInput />
+      <Image src={PigpenImage} alt='pigpen decrypt' />
     </Wrapper>
   )
 }
@@ -41,4 +44,9 @@ const Pigpen = styled(ClueText)`
 
 const Loading = styled.p`
   color: ${styles.colour.black};
+`
+
+const Image = styled.img`
+  background-color: ${styles.colour.transparentWhite};
+  width: 100%;
 `

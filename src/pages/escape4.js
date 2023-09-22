@@ -12,13 +12,14 @@ export default function Escape4() {
       <PageSection>
         <Title />
         <Intro>
-          Well done! Now, some maths and science to get your brain going:
+          Well done! Now, some science and maths to get your brain going:
         </Intro>
         <Clue>
           <ClueText>((Au + Ag) * Ne) - Cs</ClueText>
         </Clue>
       </PageSection>
       <PasswordInput />
+      <small>Pssst... You might need Google for this one!</small>
     </Wrapper>
   )
 }
