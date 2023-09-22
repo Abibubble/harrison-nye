@@ -7,8 +7,12 @@ import Wrapper from '../components/wrapper'
 export default function Rsvp() {
   return (
     <Wrapper wedding>
-      <h1>RSVP</h1>
+      <Heading>RSVP</Heading>
       <RsvpForm />
     </Wrapper>
   )
 }
+
+const Heading = styled.h1`
+  color: ${styles.colour.black};
+`
