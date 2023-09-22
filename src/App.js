@@ -1,13 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages'
-import Welcome from './pages/welcome'
-import Rsvp from './pages/rsvp'
+
+import DayPlan from './pages/day-plan'
+import DressCode from './pages/dress-code'
 import Escape2 from './pages/escape2'
 import Escape3 from './pages/escape3'
 import Escape4 from './pages/escape4'
-import DayPlan from './pages/day-plan'
-import DressCode from './pages/dress-code'
+import Home from './pages'
+import Rsvp from './pages/rsvp'
+import Welcome from './pages/welcome'
 
 export default function App() {
   return (
