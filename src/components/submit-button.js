@@ -10,7 +10,7 @@ const Button = styled.input`
   margin: ${styles.spacer.tiny};
   border: 6px solid;
   border-image-slice: 1;
-  border-width: 4px;
+  border-width: ${styles.spacer.tiny};
   border-image-source: linear-gradient(
     to right,
     ${styles.colour.darkBlue},
