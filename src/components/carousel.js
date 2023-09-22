@@ -1,7 +1,8 @@
 import { React, useState } from 'react'
 import styled from 'styled-components'
-import imageData from '../data/image-data'
 import styles from '../data/styles'
+
+import imageData from '../data/image-data'
 
 // Need next / previous arrow buttons
 // Need to add a fade in / out transition

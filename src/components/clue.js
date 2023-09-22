@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
+
 import clueImg from '../images/clue.webp'
 
 export default function Clue({ ...props }) {

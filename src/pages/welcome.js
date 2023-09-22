@@ -4,6 +4,7 @@ import styles from '../styles/styles'
 import Invite from '../components/invite'
 import Link from '../components/link'
 import Wrapper from '../components/wrapper'
+
 import imageData from '../data/image-data'
 
 export default function Welcome() {

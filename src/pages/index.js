@@ -1,23 +1,20 @@
-import styled from 'styled-components'
-import PasswordInput from '../components/password-input'
-import styles from '../styles/styles'
-import Wrapper from '../components/wrapper'
-import Title from '../components/title'
-import Intro from '../components/intro'
 import Clue from '../components/clue'
+import Intro from '../components/intro'
+import PageSection from '../components/page-section'
+import PasswordInput from '../components/password-input'
+import Title from '../components/title'
+import Wrapper from '../components/wrapper'
 
 export default function Home() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title>Bubble & Squeak</Title>
+        <Title />
         <Intro>
           Welcome to our escape room website. You'll be tested with a series of
           puzzles and riddles, and if you can solve them all, you'll be rewarded
           with a prize. Good luck!
         </Intro>
-      </PageSection>
-      <PageSection>
         <Clue>
           Let's start easy. Try to guess our <em>password</em>
         </Clue>
@@ -26,7 +23,3 @@ export default function Home() {
     </Wrapper>
   )
 }
-
-const PageSection = styled.div`
-  padding: ${styles.spacer.small};
-`

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import Wrapper from '../components/wrapper'
 import styles from '../styles/styles'
+
+import Wrapper from '../components/wrapper'
 
 export default function DayPlan() {
   return (

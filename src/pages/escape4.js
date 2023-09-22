@@ -1,25 +1,22 @@
-import styled from 'styled-components'
-import PasswordInput from '../components/password-input'
-import styles from '../styles/styles'
-import Wrapper from '../components/wrapper'
-import Title from '../components/title'
-import Intro from '../components/intro'
 import Clue from '../components/clue'
+import Intro from '../components/intro'
+import PageSection from '../components/page-section'
+import PasswordInput from '../components/password-input'
+import Title from '../components/title'
+import Wrapper from '../components/wrapper'
 
 export default function Escape4() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title>Well done!</Title>
-        <Intro>For the last one, solve this riddle</Intro>
-      </PageSection>
-      <PageSection>
+        <Title />
+        <Intro>Well done! For the last one, solve this riddle:</Intro>
         <Clue>
           Before you get engaged
           <br />
-          In a small box it is carried
+          In a small box I am carried
           <br />
-          It is what gets exchanged
+          I am what gets exchanged
           <br />
           On the day that you get married
         </Clue>
@@ -28,7 +25,3 @@ export default function Escape4() {
     </Wrapper>
   )
 }
-
-const PageSection = styled.div`
-  margin: ${styles.spacer.small};
-`

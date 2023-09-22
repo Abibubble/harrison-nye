@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import PasswordInput from '../components/password-input'
 import styles from '../styles/styles'
-import Wrapper from '../components/wrapper'
-import Title from '../components/title'
-import Intro from '../components/intro'
+
 import Clue from '../components/clue'
+import Intro from '../components/intro'
+import PageSection from '../components/page-section'
+import PasswordInput from '../components/password-input'
+import Title from '../components/title'
+import Wrapper from '../components/wrapper'
 
 export default function Escape3() {
   const [isReady, setIsReady] = useState(false)
@@ -17,20 +19,16 @@ export default function Escape3() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title>Well done!</Title>
-        <Intro>For the next one, solve the pigpen cipher below</Intro>
-      </PageSection>
-      <PageSection>
+        <Title />
+        <Intro>
+          Well done! For the next one, solve the pigpen cipher below:
+        </Intro>
         {isReady ? <Pigpen>gerbil</Pigpen> : <p>Loading...</p>}
       </PageSection>
       <PasswordInput />
     </Wrapper>
   )
 }
-
-const PageSection = styled.div`
-  padding: ${styles.spacer.small};
-`
 
 const Pigpen = styled(Clue)`
   font-family: 'pigpen', sans-serif;

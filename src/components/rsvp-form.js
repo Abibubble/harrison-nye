@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
 import styled from 'styled-components'
-import emailjs from '@emailjs/browser'
 import styles from '../styles/styles'
+import emailjs from '@emailjs/browser'
+
 import SubmitButton from './submit-button'
 
 export default function RsvpForm() {

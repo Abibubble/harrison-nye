@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import Wrapper from './wrapper'
 import styles from '../styles/styles'
+
+import Wrapper from './wrapper'
 
 export default function Invite() {
   return (

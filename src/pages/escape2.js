@@ -1,19 +1,16 @@
-import styled from 'styled-components'
-import PasswordInput from '../components/password-input'
-import styles from '../styles/styles'
-import Wrapper from '../components/wrapper'
-import Title from '../components/title'
-import Intro from '../components/intro'
 import Clue from '../components/clue'
+import Intro from '../components/intro'
+import PageSection from '../components/page-section'
+import PasswordInput from '../components/password-input'
+import Title from '../components/title'
+import Wrapper from '../components/wrapper'
 
 export default function Escape2() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title>Well done!</Title>
-        <Intro>That was definitely too easy. Here's the next clue</Intro>
-      </PageSection>
-      <PageSection>
+        <Title />
+        <Intro>That was definitely too easy. Here's the next clue:</Intro>
         <Clue>
           there's This tune i found
           <br />
@@ -30,7 +27,3 @@ export default function Escape2() {
     </Wrapper>
   )
 }
-
-const PageSection = styled.div`
-  margin: ${styles.spacer.small};
-`

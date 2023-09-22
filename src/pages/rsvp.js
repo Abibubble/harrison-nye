@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import RsvpForm from '../components/rsvp-form'
 import styles from '../styles/styles'
+
+import RsvpForm from '../components/rsvp-form'
 import Wrapper from '../components/wrapper'
 
 export default function Rsvp() {

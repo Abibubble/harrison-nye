@@ -1,6 +1,7 @@
-import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
+import styled from 'styled-components'
 import styles from '../styles/styles'
+
 import SubmitButton from './submit-button'
 
 export default function PasswordInput() {
@@ -9,6 +10,7 @@ export default function PasswordInput() {
   const secondPassword = process.env.REACT_APP_SECOND_PASSWORD
   const thirdPassword = process.env.REACT_APP_THIRD_PASSWORD
   const finalPassword = process.env.REACT_APP_FINAL_PASSWORD
+  const alternateFinalPassword = process.env.REACT_APP_FINAL_PASSWORD_2
 
   function checkPassword() {
     const pathname = window.location.pathname
@@ -16,7 +18,10 @@ export default function PasswordInput() {
       .getElementById('password-input')
       .value.toLowerCase()
 
-    if (passwordInput === finalPassword) {
+    if (
+      passwordInput === finalPassword ||
+      passwordInput === alternateFinalPassword
+    ) {
       navigate('/welcome', { replace: true })
     } else {
       if (pathname === '/') {
@@ -32,7 +37,8 @@ export default function PasswordInput() {
           ? navigate('/escape4', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/escape4') {
-        passwordInput === finalPassword
+        passwordInput === finalPassword ||
+        passwordInput === alternateFinalPassword
           ? navigate('/welcome', { replace: true })
           : alert('Oops, try again!')
       }

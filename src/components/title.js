@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
 
-export default function Title({ ...props }) {
-  return <StyledTitle>{props.children}</StyledTitle>
+export default function Title() {
+  return <StyledTitle>Bubble & Squeak</StyledTitle>
 }
 
 const StyledTitle = styled.h1`
