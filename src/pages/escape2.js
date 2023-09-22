@@ -10,7 +10,7 @@ export default function Escape2() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title />
+        <Title>Bubble & Squeak</Title>
         <Intro>That was definitely too easy. Here's the next clue:</Intro>
         <Clue>
           <ClueText>

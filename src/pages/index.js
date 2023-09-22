@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title />
+        <Title>Bubble & Squeak</Title>
         <Intro>
           Welcome to our escape room website. You'll be tested with a series of
           puzzles and riddles, and if you can solve them all, you'll be rewarded

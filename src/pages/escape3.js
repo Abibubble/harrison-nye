@@ -22,7 +22,7 @@ export default function Escape3() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title />
+        <Title>Bubble & Squeak</Title>
         <Intro>
           Well done! For the next one, solve the pigpen cipher below:
         </Intro>

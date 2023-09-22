@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
 
+import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
 export default function DressCode() {
   return (
     <Wrapper wedding>
       <Container>
+        <Title>Dress Code</Title>
         <p>Wear something</p>
         <Button href='/welcome'>Back</Button>
       </Container>

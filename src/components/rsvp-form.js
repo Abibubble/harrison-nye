@@ -1,11 +1,14 @@
 import React, { useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+import styles from '../styles/styles'
 import emailjs from '@emailjs/browser'
 
 import SubmitButton from './submit-button'
 
 export default function RsvpForm() {
   const form = useRef()
+  const navigate = useNavigate()
 
   const sendEmail = e => {
     e.preventDefault()
@@ -19,10 +22,13 @@ export default function RsvpForm() {
       )
       .then(
         result => {
-          console.log(result.text)
+          alert("Thanks! We can't wait to celebrate with you!")
+          navigate('/welcome', { replace: true })
         },
         error => {
-          console.log(error.text)
+          alert(
+            'Oh no! Something went wrong! Please send us an email at the.harrison.nyes@gmail.com'
+          )
         }
       )
   }
@@ -35,17 +41,22 @@ export default function RsvpForm() {
       <Input type='email' name='user_email' />
       <Label>Phone Number</Label>
       <Input type='tel' name='phone_number' />
+      <Label>Who are you responding for?</Label>
+      <Input type='text' name='people' />
       <fieldset>
         <legend>RSVP</legend>
-        <Label for='yes'>Yes</Label>
-        <Input type='radio' name='rsvp' id='yes' value='Yes' />
-        <Label for='no'>No</Label>
-        <Input type='radio' name='rsvp' id='no' value='No' />
+        <RsvpSection>
+          <Label for='yes'>Yes</Label>
+          <Input type='radio' name='rsvp' id='yes' value='Yes' />
+          <Label for='no'>No</Label>
+          <Input type='radio' name='rsvp' id='no' value='No' />
+        </RsvpSection>
       </fieldset>
       <Label>Any allergies?</Label>
-      <textarea name='allergy' />
+      <Textarea name='allergy' />
       <Label>Any dietary restrictions?</Label>
-      <textarea name='dietary' />
+      <Textarea name='dietary' />
+      <br />
       <SubmitButton value='Send' />
     </form>
   )
@@ -54,9 +65,68 @@ export default function RsvpForm() {
 const Label = styled.label`
   display: block;
   margin: 0 auto;
+  font-size: 1.4rem;
 `
 
 const Input = styled.input`
   display: block;
   margin: 0 auto;
+  width: 75%;
+  max-width: 200px;
+  font-family: 'Cormorant Garamond', Arial, Helvetica sans-serif;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(
+    to left,
+    ${styles.colour.darkBlue},
+    ${styles.colour.darkPurple}
+  );
+  font-size: 1.4rem;
+
+  &:not([type='radio']) {
+    margin-bottom: ${styles.spacer.medium};
+  }
+
+  &[type='radio'] {
+    height: ${styles.spacer.small};
+  }
+
+  @media (min-width: ${styles.breakpoint.small}) {
+    width: 60%;
+  }
+
+  @media (min-width: ${styles.breakpoint.medium}) {
+    width: 30%;
+  }
+`
+
+const RsvpSection = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 50%;
+  margin: 0 auto;
+`
+
+const Textarea = styled.textarea`
+  width: 75%;
+  max-width: 200px;
+  font-family: 'Cormorant Garamond', Arial, Helvetica sans-serif;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(
+    to left,
+    ${styles.colour.darkBlue},
+    ${styles.colour.darkPurple}
+  );
+  font-size: 1.4rem;
+
+  @media (min-width: ${styles.breakpoint.small}) {
+    width: 60%;
+  }
+
+  @media (min-width: ${styles.breakpoint.medium}) {
+    width: 30%;
+  }
 `

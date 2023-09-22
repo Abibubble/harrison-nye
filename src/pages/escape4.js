@@ -10,7 +10,7 @@ export default function Escape4() {
   return (
     <Wrapper escape>
       <PageSection>
-        <Title />
+        <Title>Bubble & Squeak</Title>
         <Intro>
           Well done! Now, some science and maths to get your brain going:
         </Intro>

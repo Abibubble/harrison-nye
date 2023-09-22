@@ -1,18 +1,15 @@
-import styled from 'styled-components'
-import styles from '../styles/styles'
-
+import PageSection from '../components/page-section'
 import RsvpForm from '../components/rsvp-form'
+import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
 export default function Rsvp() {
   return (
     <Wrapper wedding>
-      <Heading>RSVP</Heading>
-      <RsvpForm />
+      <PageSection>
+        <Title>RSVP</Title>
+        <RsvpForm />
+      </PageSection>
     </Wrapper>
   )
 }
-
-const Heading = styled.h1`
-  color: ${styles.colour.black};
-`
