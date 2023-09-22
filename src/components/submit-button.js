@@ -8,9 +8,15 @@ export default function SubmitButton({ value }) {
 const Button = styled.input`
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin: ${styles.spacer.tiny};
-  border-radius: ${styles.spacer.tiny};
-  border: ${styles.spacer.fine} solid grey;
-  background-color: ${styles.colour.blue};
-  font-size: 1.3rem;
+  border: 6px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(
+    to right,
+    ${styles.colour.darkBlue},
+    ${styles.colour.darkPurple}
+  );
+  background: ${styles.colour.transparentWhite};
+  font-size: 1.4rem;
   padding: 0 ${styles.spacer.small};
 `

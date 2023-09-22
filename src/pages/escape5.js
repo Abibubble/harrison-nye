@@ -6,19 +6,21 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Home() {
+export default function Escape5() {
   return (
     <Wrapper escape>
       <PageSection>
         <Title />
-        <Intro>
-          Welcome to our escape room website. You'll be tested with a series of
-          puzzles and riddles, and if you can solve them all, you'll be rewarded
-          with a prize. Good luck!
-        </Intro>
+        <Intro>Well done! For the last one, solve this riddle:</Intro>
         <Clue>
           <ClueText>
-            Let's start easy. Try to guess our <em>password</em>
+            Before you get engaged
+            <br />
+            In a small box I am carried
+            <br />
+            I am what gets exchanged
+            <br />
+            On the day that you get married
           </ClueText>
         </Clue>
       </PageSection>

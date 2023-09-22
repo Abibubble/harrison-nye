@@ -7,13 +7,11 @@ export default function Clue({ ...props }) {
   return <StyledClue className={props.className}>{props.children}</StyledClue>
 }
 
-const StyledClue = styled.p`
-  font-size: 1.2rem;
+const StyledClue = styled.div`
   min-height: 60px;
-  width: 60%;
-  padding: ${styles.spacer.large};
+  width: 80%;
+  padding: ${styles.spacer.medium};
   background: url(${clueImg}) no-repeat center center;
   background-size: cover;
   margin: 0 auto;
-  color: ${styles.colour.black};
 `

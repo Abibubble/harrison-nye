@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import styles from '../styles/styles'
 
 import Clue from '../components/clue'
+import ClueText from '../components/clue-text'
 import Intro from '../components/intro'
 import PageSection from '../components/page-section'
 import PasswordInput from '../components/password-input'
@@ -23,15 +24,21 @@ export default function Escape3() {
         <Intro>
           Well done! For the next one, solve the pigpen cipher below:
         </Intro>
-        {isReady ? <Pigpen>gerbil</Pigpen> : <p>Loading...</p>}
+        <Clue>
+          {isReady ? <Pigpen>gerbil</Pigpen> : <Loading>Loading...</Loading>}
+        </Clue>
       </PageSection>
       <PasswordInput />
     </Wrapper>
   )
 }
 
-const Pigpen = styled(Clue)`
+const Pigpen = styled(ClueText)`
   font-family: 'pigpen', sans-serif;
   font-size: 2.4rem;
-  padding: ${styles.spacer.large} 60px ${styles.spacer.large} 36px;
+  padding: ${styles.spacer.large} ${styles.spacer.tiny} ${styles.spacer.large};
+`
+
+const Loading = styled.p`
+  color: ${styles.colour.black};
 `
