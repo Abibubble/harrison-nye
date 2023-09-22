@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
 
+import Button from '../components/button'
 import PageSection from '../components/page-section'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
@@ -29,27 +30,6 @@ export default function DayPlan() {
     </Wrapper>
   )
 }
-
-const Button = styled.a`
-  text-decoration: none;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  margin: ${styles.spacer.tiny};
-  border: 6px solid;
-  border-image-slice: 1;
-  border-width: 4px;
-  border-image-source: linear-gradient(
-    to right,
-    ${styles.colour.darkBlue},
-    ${styles.colour.darkPurple}
-  );
-  background: ${styles.colour.transparentWhite};
-  font-size: 1.4rem;
-  padding: 0 ${styles.spacer.small};
-
-  &:visited {
-    color: ${styles.colour.black};
-  }
-`
 
 const PlanGrid = styled.div`
   margin: ${styles.spacer.medium} auto;

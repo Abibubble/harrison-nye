@@ -1,30 +1,26 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
 
+import Button from '../components/button'
+import PageSection from '../components/page-section'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
 export default function DressCode() {
   return (
     <Wrapper wedding>
-      <Container>
+      <PageSection>
         <Title>Dress Code</Title>
-        <p>Wear something</p>
+        <Text>Wear something</Text>
+        <Text>Ideally</Text>
+        <Text>Or not</Text>
+        <Text>You do you</Text>
         <Button href='/welcome'>Back</Button>
-      </Container>
+      </PageSection>
     </Wrapper>
   )
 }
 
-const Container = styled.div`
-  padding: 0 ${styles.spacer.small} ${styles.spacer.small};
-`
-
-const Button = styled.a`
-  margin: ${styles.spacer.tiny};
-  border-radius: ${styles.spacer.tiny};
-  border: ${styles.spacer.fine} solid grey;
-  background-color: ${styles.colour.blue};
-  font-size: 1.5rem;
-  padding: 0 ${styles.spacer.small};
+const Text = styled.p`
+  margin: ${styles.spacer.small} auto;
 `

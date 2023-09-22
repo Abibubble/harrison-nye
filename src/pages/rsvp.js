@@ -1,3 +1,4 @@
+import Button from '../components/button'
 import PageSection from '../components/page-section'
 import RsvpForm from '../components/rsvp-form'
 import Title from '../components/title'
@@ -9,6 +10,7 @@ export default function Rsvp() {
       <PageSection>
         <Title>RSVP</Title>
         <RsvpForm />
+        <Button href='/welcome'>Back</Button>
       </PageSection>
     </Wrapper>
   )
