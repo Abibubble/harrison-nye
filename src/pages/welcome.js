@@ -3,6 +3,7 @@ import styles from '../styles/styles'
 
 import Invite from '../components/invite'
 import Link from '../components/link'
+import PageSection from '../components/page-section'
 import Wrapper from '../components/wrapper'
 
 import imageData from '../data/image-data'
@@ -10,14 +11,18 @@ import imageData from '../data/image-data'
 export default function Welcome() {
   return (
     <Wrapper wedding>
-      <Invite />
-      <Image
-        src={require(`../images/${imageData[11].src}`)}
-        alt={imageData[11].alt}
-      />
-      <StyledLink href='/rsvp'>RSVP here</StyledLink>
-      <StyledLink href='/day-plan'>Day plan</StyledLink>
-      <StyledLink href='/dress-code'>Dress code</StyledLink>
+      <PageSection>
+        <Invite />
+        <Image
+          src={require(`../images/${imageData[11].src}`)}
+          alt={imageData[11].alt}
+        />
+        <LinkWrapper>
+          <Link href='/rsvp'>RSVP here</Link>
+          <Link href='/day-plan'>Day plan</Link>
+          <Link href='/dress-code'>Dress code</Link>
+        </LinkWrapper>
+      </PageSection>
     </Wrapper>
   )
 }
@@ -29,11 +34,26 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: ${styles.spacer.tiny};
 
-  @media (min-width: ${styles.breakpoint.medium}}) {
-    max-height: 500px;
+  @media screen and (min-width: ${styles.breakpoint.small}) {
+    max-height: 400px;
+  }
+
+  @media screen and (min-width: 615px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: ${styles.breakpoint.medium}) {
+    max-width: 600px;
+    width: 65%;
   }
 `
 
-const StyledLink = styled(Link)`
-  width: 100%;
+const LinkWrapper = styled.div`
+  padding: ${styles.spacer.small};
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 653px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `

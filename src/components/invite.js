@@ -1,28 +1,19 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
 
-import Wrapper from './wrapper'
-
 export default function Invite() {
   return (
-    <StyledWrapper>
-      <Container>
-        <p>You are invited to the wedding reception of</p>
-        <h1>Abi Harrison & Conor Nye</h1>
-        <p>On</p>
-        <h2>12th May 2024</h2>
-        <p>At</p>
-        <h2>2pm, Location</h2>
-      </Container>
-    </StyledWrapper>
+    <Container>
+      <p>You are invited to the wedding reception of</p>
+      <h1>Abi Harrison & Conor Nye</h1>
+      <p>on</p>
+      <h2>12th May 2024 at 6pm</h2>
+      <p>at</p>
+      <h2>The Woodman, Eastcote</h2>
+    </Container>
   )
 }
 
 const Container = styled.div`
-  padding: 0 ${styles.spacer.small} ${styles.spacer.small};
-`
-
-const StyledWrapper = styled(Wrapper)`
-  background-color: transparent;
-  padding: 0;
+  padding: ${styles.spacer.small};
 `

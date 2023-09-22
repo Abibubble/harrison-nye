@@ -7,4 +7,6 @@ export default function PageSection({ ...props }) {
 
 const StyledPageSection = styled.div`
   padding: ${styles.spacer.small};
+  max-width: 740px;
+  margin: 0 auto;
 `
