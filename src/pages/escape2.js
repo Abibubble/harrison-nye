@@ -14,19 +14,25 @@ export default function Escape2() {
         <Intro>That was definitely too easy. Here's the next clue:</Intro>
         <Clue>
           <ClueText>
-            there's This tune i found
+            The answer to this riddle has a hole in the middle,
             <br />
-            that makes me thInk of you soMehow,
+            and some have been known to fall in it.
             <br />
-            and i play it on repEat
+            In tennis it's nothing, but it can be recieved,
             <br />
-            untiL i fall aslEep,
+            and sometimes a person may win it.
             <br />
-            Spilling drinks on my Settee
+            Though it's not seen or heard it may be percieved,
+            <br />
+            unlike princes you'll find it in clover.
+            <br />
+            The answer to this riddle has a hole in the middle,
+            <br />
+            and without it one cannot start over.
           </ClueText>
         </Clue>
+        <PasswordInput />
       </PageSection>
-      <PasswordInput />
     </Wrapper>
   )
 }

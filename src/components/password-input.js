@@ -6,12 +6,16 @@ import SubmitButton from './submit-button'
 
 export default function PasswordInput() {
   const navigate = useNavigate()
-  const firstPassword = process.env.REACT_APP_FIRST_PASSWORD
-  const secondPassword = process.env.REACT_APP_SECOND_PASSWORD
-  const thirdPassword = process.env.REACT_APP_THIRD_PASSWORD
-  const fourthPassword = process.env.REACT_APP_FOURTH_PASSWORD
-  const finalPassword = process.env.REACT_APP_FINAL_PASSWORD
-  const alternateFinalPassword = process.env.REACT_APP_FINAL_PASSWORD_2
+
+  const passwordOne = process.env.REACT_APP_PASSWORD_ONE
+  const passwordTwo = process.env.REACT_APP_PASSWORD_TWO
+  const passwordThree = process.env.REACT_APP_PASSWORD_THREE
+  const passwordFour = process.env.REACT_APP_PASSWORD_FOUR
+  const passwordFive = process.env.REACT_APP_PASSWORD_FIVE
+  const passwordSix = process.env.REACT_APP_PASSWORD_SIX
+  const passwordSeven = process.env.REACT_APP_PASSWORD_SEVEN
+  const passwordEight = process.env.REACT_APP_PASSWORD_EIGHT
+  const passwordEightAlt = process.env.REACT_APP_PASSWORD_EIGHT_ALT
 
   function checkPassword(event) {
     event.preventDefault()
@@ -19,10 +23,9 @@ export default function PasswordInput() {
 
     let passwordInput = ''
 
-    if (pathname === '/escape4') {
+    if (pathname === '/science' || pathname === '/maths') {
       for (let i = 1; i <= 4; i++) {
         passwordInput += document.getElementById('dial-' + i).value
-        console.log(passwordInput)
       }
     } else {
       passwordInput = document
@@ -30,31 +33,39 @@ export default function PasswordInput() {
         .value.toLowerCase()
     }
 
-    if (
-      passwordInput === finalPassword ||
-      passwordInput === alternateFinalPassword
-    ) {
+    if (passwordInput === passwordEight || passwordInput === passwordEightAlt) {
       navigate('/welcome', { replace: true })
     } else {
       if (pathname === '/') {
-        passwordInput === firstPassword
-          ? navigate('/escape2', { replace: true })
+        passwordInput === passwordOne
+          ? navigate('/poem', { replace: true })
           : alert('Oops, try again!')
-      } else if (pathname === '/escape2') {
-        passwordInput === secondPassword
+      } else if (pathname === '/poem') {
+        passwordInput === passwordTwo
           ? navigate('/escape3', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/escape3') {
-        passwordInput === thirdPassword
-          ? navigate('/escape4', { replace: true })
+        passwordInput === passwordThree
+          ? navigate('/pigpen', { replace: true })
           : alert('Oops, try again!')
-      } else if (pathname === '/escape4') {
-        passwordInput === fourthPassword
-          ? navigate('/escape5', { replace: true })
+      } else if (pathname === '/pigpen') {
+        passwordInput === passwordFour
+          ? navigate('/science', { replace: true })
           : alert('Oops, try again!')
-      } else if (pathname === '/escape5') {
-        passwordInput === finalPassword ||
-        passwordInput === alternateFinalPassword
+      } else if (pathname === '/science') {
+        passwordInput === passwordFive
+          ? navigate('/maths', { replace: true })
+          : alert('Oops, try again!')
+      } else if (pathname === '/maths') {
+        passwordInput === passwordSix
+          ? navigate('/escape7', { replace: true })
+          : alert('Oops, try again!')
+      } else if (pathname === '/escape7') {
+        passwordInput === passwordSeven
+          ? navigate('/riddle', { replace: true })
+          : alert('Oops, try again!')
+      } else if (pathname === '/riddle') {
+        passwordInput === passwordEight || passwordInput === passwordEightAlt
           ? navigate('/welcome', { replace: true })
           : alert('Oops, try again!')
       }
@@ -67,7 +78,8 @@ export default function PasswordInput() {
   return (
     <Form onSubmit={checkPassword}>
       <Label for='password'>Enter here:</Label>
-      {window.location.pathname === '/escape4' ? (
+      {window.location.pathname === '/science' ||
+      window.location.pathname === '/maths' ? (
         <LockWrapper>
           {dials.map(dial => (
             <SelectInput key={dial} name={`dial-${dial}`} id={`dial-${dial}`}>
@@ -84,7 +96,9 @@ export default function PasswordInput() {
       )}
       <SubmitButton value='Submit' />
       <br />
-      <SmallText>All the clues you need are on this page.</SmallText>
+      <SmallText>
+        All the clues you need are on (or linked to from) this page.
+      </SmallText>
     </Form>
   )
 }

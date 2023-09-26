@@ -1,6 +1,3 @@
-import styled from 'styled-components'
-import styles from '../styles/styles'
-
 import Clue from '../components/clue'
 import ClueText from '../components/clue-text'
 import Intro from '../components/intro'
@@ -9,30 +6,19 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Escape5() {
+export default function Escape7() {
   return (
     <Wrapper escape>
       <PageSection>
         <Title>Bubble & Squeak</Title>
         <Intro>
-          Well done! Now, some science and maths to get your brain going:
+          Phew, that's enough maths for one day! Here's your next one:
         </Intro>
         <Clue>
-          <ClueText>((Au + Ag) * Ne) - Cs</ClueText>
+          <ClueText>House</ClueText>
         </Clue>
+        <PasswordInput />
       </PageSection>
-      <PasswordInput />
-      <Link href='https://www.google.com/search?q=periodic+table'>
-        Pssst... You might need Google for this one!
-      </Link>
     </Wrapper>
   )
 }
-
-const Link = styled.a`
-  color: ${styles.colour.blue};
-
-  &:visited {
-    color: ${styles.colour.blue};
-  }
-`

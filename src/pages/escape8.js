@@ -6,17 +6,25 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Escape3() {
+export default function Escape8() {
   return (
     <Wrapper escape>
       <PageSection>
         <Title>Bubble & Squeak</Title>
-        <Intro>That was definitely too easy. Here's the next clue:</Intro>
+        <Intro>Well done! For the last one, solve this riddle:</Intro>
         <Clue>
-          <ClueText>Holidays</ClueText>
+          <ClueText>
+            Before you get engaged
+            <br />
+            In a small box I am carried
+            <br />
+            I am what gets exchanged
+            <br />
+            On the day that we get married
+          </ClueText>
         </Clue>
-        <PasswordInput />
       </PageSection>
+      <PasswordInput />
     </Wrapper>
   )
 }
