@@ -1,32 +1,20 @@
 # harrison nye
 
-- Photo carousel
-- Dress code
-- RSVP
-- Food choices?
-- Allergy info
-- Day plan
-
-Steps
-
-- Code base website
-- RSVP page
-- RSVP form
-- Email responses
-
-To do
-
 Wedding
 
 - Fix carousel
-- Make escape less cheesy
-- Reroute on RSVP send & alert
-- Fix fonts
 - Wedding colour scheme - white, purple, blue
+- Dropdown to select people attending from a list. One submission per person
+- Add new RSVP or I'm done buttons
+- Wedding gifts - honeymoon fund
 
 Escape room
 
+- Make escape less cheesy
 - Black overlay
 - Scroll or old paper to put the clue on
 - Input to look like a padlock?
-- Add pigpen diagram
+- Add periodic table
+- Change passwords
+- Capitals coloured?
+- Make buttons look better

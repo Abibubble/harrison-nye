@@ -7,6 +7,7 @@ import Escape2 from './pages/escape2'
 import Escape3 from './pages/escape3'
 import Escape4 from './pages/escape4'
 import Escape5 from './pages/escape5'
+import Gift from './pages/gift'
 import Home from './pages'
 import Rsvp from './pages/rsvp'
 import Welcome from './pages/welcome'
@@ -24,6 +25,7 @@ export default function App() {
         <Route path='/rsvp' element={<Rsvp />} />
         <Route path='/day-plan' element={<DayPlan />} />
         <Route path='/dress-code' element={<DressCode />} />
+        <Route path='/gift' element={<Gift />} />
       </Routes>
     </Router>
   )

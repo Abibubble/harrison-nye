@@ -21,6 +21,7 @@ export default function Welcome() {
           <Link href='/rsvp'>RSVP here</Link>
           <Link href='/day-plan'>Day plan</Link>
           <Link href='/dress-code'>Dress code</Link>
+          <Link href='/gift'>Wedding gifts</Link>
         </LinkWrapper>
       </PageSection>
     </Wrapper>
