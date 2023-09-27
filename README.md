@@ -4,7 +4,6 @@ Wedding
 
 - Fix carousel
 - Wedding colour scheme - white, purple, blue
-- Dropdown to select people attending from a list. One submission per person
 - Add new RSVP or I'm done buttons
 
 Escape room
