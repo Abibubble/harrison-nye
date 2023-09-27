@@ -20,11 +20,11 @@ export default function Escape5() {
         <Clue>
           <ClueText>((Au + Ag) * Ne) - Cs</ClueText>
         </Clue>
+        <PasswordInput />
+        <Link href='https://www.google.com/search?q=periodic+table'>
+          Pssst... You might need Google for this one!
+        </Link>
       </PageSection>
-      <PasswordInput />
-      <Link href='https://www.google.com/search?q=periodic+table'>
-        Pssst... You might need Google for this one!
-      </Link>
     </Wrapper>
   )
 }

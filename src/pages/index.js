@@ -1,8 +1,6 @@
-import Clue from '../components/clue'
-import ClueText from '../components/clue-text'
+import Button from '../components/button'
 import Intro from '../components/intro'
 import PageSection from '../components/page-section'
-import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
@@ -16,13 +14,16 @@ export default function Home() {
           puzzles and riddles, and if you can solve them all, you'll be rewarded
           with a prize. Good luck!
         </Intro>
-        <Clue>
-          <ClueText>
-            Let's start easy. Try to guess our <em>password</em>
-          </ClueText>
-        </Clue>
+        <Intro>
+          We know not all of you will be familiar with escape room puzzles, so
+          if you'd like an easier version, click the easy mode button below. If
+          you're up for a challenge, click the hard mode button.
+        </Intro>
+        <Button href='/escape7'>Easy mode</Button>
+        <br />
+        <br />
+        <Button href='/escape1'>Hard mode</Button>
       </PageSection>
-      <PasswordInput />
     </Wrapper>
   )
 }

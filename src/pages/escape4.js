@@ -29,9 +29,9 @@ export default function Escape4() {
         <Clue>
           {isReady ? <Pigpen>gerbil</Pigpen> : <Loading>Loading...</Loading>}
         </Clue>
+        <PasswordInput />
+        <Image src={PigpenImage} alt='pigpen decrypt' />
       </PageSection>
-      <PasswordInput />
-      <Image src={PigpenImage} alt='pigpen decrypt' />
     </Wrapper>
   )
 }
@@ -40,6 +40,10 @@ const Pigpen = styled(ClueText)`
   font-family: 'pigpen', sans-serif;
   font-size: 2.4rem;
   padding: ${styles.spacer.large} ${styles.spacer.tiny} ${styles.spacer.large};
+
+  @media screen and (min-width: ${styles.breakpoint.medium}) {
+    font-size: 4rem !important;
+  }
 `
 
 const Loading = styled.p`

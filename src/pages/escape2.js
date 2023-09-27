@@ -24,7 +24,7 @@ export default function Escape2() {
             <br />
             Though it's not seen or heard it may be percieved,
             <br />
-            unlike princes you'll find it in clover.
+            unlike princes you'll find it in c<em>love</em>r.
             <br />
             The answer to this riddle has a hole in the middle,
             <br />

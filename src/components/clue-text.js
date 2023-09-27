@@ -19,4 +19,8 @@ const StyledClueText = styled.p`
   @media screen and (min-width: ${styles.breakpoint.small}) {
     font-size: 1.6rem;
   }
+
+  @media screen and (min-width: ${styles.breakpoint.medium}) {
+    font-size: 2rem;
+  }
 `

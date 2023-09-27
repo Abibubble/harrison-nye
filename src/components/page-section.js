@@ -7,6 +7,10 @@ export default function PageSection({ ...props }) {
 
 const StyledPageSection = styled.div`
   padding: ${styles.spacer.small};
-  max-width: 740px;
+  max-width: 600px;
   margin: 0 auto;
+
+  @media screen and (min-width: ${styles.breakpoint.medium}) {
+    max-width: 740px;
+  }
 `

@@ -7,6 +7,7 @@ export default function Button({ href, ...props }) {
 
 const StyledButton = styled.a`
   text-decoration: none;
+  color: ${styles.colour.black};
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin: ${styles.spacer.tiny};
   border: 6px solid;

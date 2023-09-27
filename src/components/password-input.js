@@ -36,7 +36,7 @@ export default function PasswordInput() {
     if (passwordInput === passwordEight || passwordInput === passwordEightAlt) {
       navigate('/welcome', { replace: true })
     } else {
-      if (pathname === '/') {
+      if (pathname === '/escape1') {
         passwordInput === passwordOne
           ? navigate('/poem', { replace: true })
           : alert('Oops, try again!')

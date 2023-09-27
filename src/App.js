@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import DayPlan from './pages/day-plan'
 import DressCode from './pages/dress-code'
+import Escape1 from './pages/escape1'
 import Escape2 from './pages/escape2'
 import Escape3 from './pages/escape3'
 import Escape4 from './pages/escape4'
@@ -20,6 +21,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route path='/escape1' element={<Escape1 />} />
         <Route path='/poem' element={<Escape2 />} />
         <Route path='/escape3' element={<Escape3 />} />
         <Route path='/pigpen' element={<Escape4 />} />
