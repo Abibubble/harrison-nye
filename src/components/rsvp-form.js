@@ -43,12 +43,14 @@ export default function RsvpForm() {
     }
   }
 
+  const sortedGuestList = guestList.sort()
+
   return (
     <form ref={form} onSubmit={sendEmail}>
       <Label for='user_name'>Name</Label>
       <Select name='user_name' id='user_name'>
         <option value=''>Please select</option>
-        {guestList.map(guest => (
+        {sortedGuestList.map(guest => (
           <option value={guest}>{guest}</option>
         ))}
       </Select>

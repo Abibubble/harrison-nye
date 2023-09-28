@@ -5,6 +5,7 @@ Wedding
 - Fix carousel
 - Wedding colour scheme - white, purple, blue
 - Add new RSVP or I'm done buttons
+- Remove name from array once the RSVP has been sent
 
 Escape room
 
