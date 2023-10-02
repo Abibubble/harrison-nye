@@ -16,14 +16,12 @@ export default function DayPlan() {
           <p>Ceremony</p>
           <p>1pm</p>
           <p>Photos</p>
-          <p>2pm</p>
-          <p>Chill (& lunch)</p>
-          <p>6pm</p>
+          <p>2.30pm</p>
           <p>Reception</p>
-          <p>7pm</p>
+          <p>6pm</p>
           <p>Food</p>
-          <p>8pm</p>
-          <p>Get drunk</p>
+          <p>10pm</p>
+          <p>Home time</p>
         </PlanGrid>
         <Button href='/welcome'>Back</Button>
       </PageSection>

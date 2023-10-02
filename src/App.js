@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import DayPlan from './pages/day-plan'
@@ -13,6 +12,7 @@ import Escape7 from './pages/escape7'
 import Escape8 from './pages/escape8'
 import Gift from './pages/gift'
 import Home from './pages'
+import ParkingAccommodation from './pages/parking-accommodation'
 import Rsvp from './pages/rsvp'
 import Welcome from './pages/welcome'
 
@@ -34,6 +34,10 @@ export default function App() {
         <Route path='/day-plan' element={<DayPlan />} />
         <Route path='/dress-code' element={<DressCode />} />
         <Route path='/gift' element={<Gift />} />
+        <Route
+          path='/parking-accommodation'
+          element={<ParkingAccommodation />}
+        />
       </Routes>
     </Router>
   )
