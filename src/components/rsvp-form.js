@@ -44,11 +44,13 @@ export default function RsvpForm() {
       <Label for='user_name'>Name</Label>
       <Select name='user_name' id='user_name'>
         <option value=''>Please select</option>
-        {guestList.map(guest => (
-          <option key={guest} value={guest}>
-            {guest}
-          </option>
-        ))}
+        {guestList.map(guest => {
+          return (
+            <option key={guest._id} value={guest.name}>
+              {guest.name}
+            </option>
+          )
+        })}
       </Select>
       <Label htmlFor='attending'>Will you be attending?</Label>
       <Select name='attending' id='attending' onChange={handleAttendingChange}>
