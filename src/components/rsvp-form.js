@@ -3,18 +3,22 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import styles from '../styles/styles'
 import emailjs from '@emailjs/browser'
-
 import SubmitButton from './submit-button'
-
 import guestList from '../data/guest-list'
 
 export default function RsvpForm() {
+  const [guestAttending, setGuestAttending] = useState(false)
+
   const form = useRef()
   const navigate = useNavigate()
 
-  const sendEmail = e => {
-    e.preventDefault()
+  function handleAttendingChange(event) {
+    const attending = event.target.value === 'yes'
+    setGuestAttending(attending)
+  }
 
+  function sendEmail(event) {
+    event.preventDefault()
     emailjs
       .sendForm(
         'rsvp_service',
@@ -35,46 +39,23 @@ export default function RsvpForm() {
       )
   }
 
-  const [guestAttending, setGuestAttending] = useState(false)
-
-  function toggleGuestAttending(attending) {
-    return () => {
-      setGuestAttending(attending)
-    }
-  }
-
-  const sortedGuestList = guestList.sort()
-
   return (
     <form ref={form} onSubmit={sendEmail}>
       <Label for='user_name'>Name</Label>
       <Select name='user_name' id='user_name'>
         <option value=''>Please select</option>
-        {sortedGuestList.map(guest => (
-          <option value={guest}>{guest}</option>
+        {guestList.map(guest => (
+          <option key={guest} value={guest}>
+            {guest}
+          </option>
         ))}
       </Select>
-      <fieldset>
-        <legend>Will you be attending?</legend>
-        <RsvpSection>
-          <Label for='yes'>Yes</Label>
-          <Input
-            type='radio'
-            name='rsvp'
-            id='yes'
-            value='Yes'
-            onClick={toggleGuestAttending(true)}
-          />
-          <Label for='no'>No</Label>
-          <Input
-            type='radio'
-            name='rsvp'
-            id='no'
-            value='No'
-            onClick={toggleGuestAttending(false)}
-          />
-        </RsvpSection>
-      </fieldset>
+      <Label htmlFor='attending'>Will you be attending?</Label>
+      <Select name='attending' id='attending' onChange={handleAttendingChange}>
+        <option value=''>Please select</option>
+        <option value='yes'>Yes</option>
+        <option value='no'>No</option>
+      </Select>
       {guestAttending && (
         <>
           <Label for='user_email'>Email</Label>
@@ -157,13 +138,6 @@ const Select = styled.select`
   @media (min-width: ${styles.breakpoint.medium}) {
     width: 30%;
   }
-`
-
-const RsvpSection = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  width: 50%;
-  margin: 0 auto;
 `
 
 const Textarea = styled.textarea`
