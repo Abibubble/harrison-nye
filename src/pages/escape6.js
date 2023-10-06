@@ -11,20 +11,16 @@ export default function Escape6() {
     <Wrapper escape>
       <PageSection>
         <Title>Bubble & Squeak</Title>
-        <Intro>Well done! Let's keep the maths going:</Intro>
+        <Intro>Well done! For the last one, solve this riddle:</Intro>
         <Clue>
           <ClueText>
-            There are 4 digits in the answer. Use these clues to fill in the
-            number.
+            Before you get engaged
             <br />
+            In a small box I am carried
             <br />
-            The first number is the third number times 2
+            I am what gets exchanged
             <br />
-            The second number is nothing
-            <br />
-            The third number is the second number plus 1
-            <br />
-            The fourth number is the first number times 3
+            On the day that we get married
           </ClueText>
         </Clue>
       </PageSection>

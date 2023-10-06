@@ -1,6 +1,3 @@
-import styled from 'styled-components'
-import styles from '../styles/styles'
-
 import Clue from '../components/clue'
 import ClueText from '../components/clue-text'
 import Intro from '../components/intro'
@@ -14,25 +11,24 @@ export default function Escape5() {
     <Wrapper escape>
       <PageSection>
         <Title>Bubble & Squeak</Title>
-        <Intro>
-          Well done! Now, some science and maths to get your brain going:
-        </Intro>
+        <Intro>Well done! Let's keep the maths going:</Intro>
         <Clue>
-          <ClueText>((Au + Ag) * Ne) - Cs</ClueText>
+          <ClueText>
+            There are 4 digits in the answer. Use these clues to fill in the
+            number.
+            <br />
+            <br />
+            The first number is the third number times 2
+            <br />
+            The second number is nothing
+            <br />
+            The third number is the second number plus 1
+            <br />
+            The fourth number is the first number times 3
+          </ClueText>
         </Clue>
-        <PasswordInput />
-        <Link href='https://www.google.com/search?q=periodic+table'>
-          Pssst... You might need Google for this one!
-        </Link>
       </PageSection>
+      <PasswordInput />
     </Wrapper>
   )
 }
-
-const Link = styled.a`
-  color: ${styles.colour.blue};
-
-  &:visited {
-    color: ${styles.colour.blue};
-  }
-`

@@ -14,7 +14,7 @@ export default function Rsvp() {
         <Title>RSVP</Title>
         <Info>
           Please fill out one RSVP per person. This allows us to keep track of
-          who has allergies
+          who has which allergies
         </Info>
         <RsvpForm />
         <Button href='/welcome'>Back</Button>

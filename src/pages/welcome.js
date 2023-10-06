@@ -6,7 +6,7 @@ import Link from '../components/link'
 import PageSection from '../components/page-section'
 import Wrapper from '../components/wrapper'
 
-import imageData from '../data/image-data'
+import RomeImage from '../images/1-romance.jpg'
 
 export default function Welcome() {
   return (
@@ -14,8 +14,8 @@ export default function Welcome() {
       <PageSection>
         <Invite />
         <Image
-          src={require(`../images/${imageData[11].src}`)}
-          alt={imageData[11].alt}
+          src={RomeImage}
+          alt='Abi and Conor on a bridge in Rome on a sunny day'
         />
         <LinkWrapper>
           <Link href='/rsvp'>RSVP here</Link>

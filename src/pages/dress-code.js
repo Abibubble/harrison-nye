@@ -11,10 +11,18 @@ export default function DressCode() {
     <Wrapper wedding>
       <PageSection>
         <Title>Dress Code</Title>
-        <Text>Wear something</Text>
-        <Text>Ideally</Text>
-        <Text>Or not</Text>
-        <Text>You do you</Text>
+        <Text>Standard wedding attire</Text>
+        <Text>
+          But don't feel the need to be uncomfortable - it's a long day!
+        </Text>
+        <Text>
+          Heels aren't required, so feel free to wear flats for comfort
+        </Text>
+        <Text>
+          As the reception will be in marquees outside, make sure you bring
+          something warm for the evening
+        </Text>
+        <Text>And don't forget your dancing shoes!</Text>
         <Button href='/welcome'>Back</Button>
       </PageSection>
     </Wrapper>

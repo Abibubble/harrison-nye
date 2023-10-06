@@ -12,16 +12,20 @@ export default function DayPlan() {
       <PageSection>
         <Title>Day Plan</Title>
         <PlanGrid>
+          <p>11.30am</p>
+          <p>Arrive at Hillingdon Civic Centre</p>
           <p>12pm</p>
           <p>Ceremony</p>
           <p>1pm</p>
           <p>Photos</p>
           <p>2.30pm</p>
+          <p>Arrive at The Woodman</p>
+          <p>3pm</p>
           <p>Reception</p>
           <p>6pm</p>
           <p>Food</p>
           <p>10pm</p>
-          <p>Home time</p>
+          <p>Carriages</p>
         </PlanGrid>
         <Button href='/welcome'>Back</Button>
       </PageSection>

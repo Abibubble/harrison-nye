@@ -8,8 +8,6 @@ import Escape3 from './pages/escape3'
 import Escape4 from './pages/escape4'
 import Escape5 from './pages/escape5'
 import Escape6 from './pages/escape6'
-import Escape7 from './pages/escape7'
-import Escape8 from './pages/escape8'
 import Gift from './pages/gift'
 import Home from './pages/home'
 import ParkingAccommodation from './pages/parking-accommodation'
@@ -21,14 +19,12 @@ export default function App() {
     <Router>
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/escape1' element={<Escape1 />} />
+        <Route path='/password' element={<Escape1 />} />
         <Route path='/poem' element={<Escape2 />} />
-        <Route path='/escape3' element={<Escape3 />} />
-        <Route path='/pigpen' element={<Escape4 />} />
-        <Route path='/science' element={<Escape5 />} />
-        <Route path='/maths' element={<Escape6 />} />
-        <Route path='/escape7' element={<Escape7 />} />
-        <Route path='/riddle' element={<Escape8 />} />
+        <Route path='/pigpen' element={<Escape3 />} />
+        <Route path='/science' element={<Escape4 />} />
+        <Route path='/maths' element={<Escape5 />} />
+        <Route path='/riddle' element={<Escape6 />} />
         <Route path='/welcome' element={<Welcome />} />
         <Route path='/rsvp' element={<Rsvp />} />
         <Route path='/day-plan' element={<DayPlan />} />

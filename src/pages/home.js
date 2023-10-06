@@ -1,6 +1,7 @@
 import Button from '../components/button'
 import Intro from '../components/intro'
 import PageSection from '../components/page-section'
+import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
@@ -15,14 +16,15 @@ export default function Home() {
           with a prize. Good luck!
         </Intro>
         <Intro>
-          We know not all of you will be familiar with escape room puzzles, so
-          if you'd like an easier version, click the easy mode button below. If
-          you're up for a challenge, click the hard mode button.
+          We know that not all of you will be familiar with escape room puzzles.
+          <br />
+          If you'd like to avoid the puzzles, use the password included in your
+          email in the password input box below.
+          <br />
+          If you're up for a challenge, click the "Let's go!" button.
         </Intro>
-        <Button href='/escape7'>Easy mode</Button>
-        <br />
-        <br />
-        <Button href='/escape1'>Hard mode</Button>
+        <Button href='/password'>Let's go!</Button>
+        <PasswordInput intro />
       </PageSection>
     </Wrapper>
   )

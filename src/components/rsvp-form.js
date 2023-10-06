@@ -28,7 +28,8 @@ export default function RsvpForm() {
       )
       .then(
         result => {
-          alert("Thanks! We can't wait to celebrate with you!")
+          alert("Thank you! We've received your RSVP.")
+          // TODO: Modal, not alert, with a 'Done' and a 'Add another RSVP' button
           navigate('/welcome', { replace: true })
         },
         error => {
@@ -46,8 +47,8 @@ export default function RsvpForm() {
         <option value=''>Please select</option>
         {guestList.map(guest => {
           return (
-            <option key={guest._id} value={guest.name}>
-              {guest.name}
+            <option key={guest} value={guest}>
+              {guest}
             </option>
           )
         })}

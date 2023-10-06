@@ -4,7 +4,7 @@ import styles from '../styles/styles'
 
 import SubmitButton from './submit-button'
 
-export default function PasswordInput() {
+export default function PasswordInput({ intro = false }) {
   const navigate = useNavigate()
 
   const passwordOne = process.env.REACT_APP_PASSWORD_ONE
@@ -13,9 +13,8 @@ export default function PasswordInput() {
   const passwordFour = process.env.REACT_APP_PASSWORD_FOUR
   const passwordFive = process.env.REACT_APP_PASSWORD_FIVE
   const passwordSix = process.env.REACT_APP_PASSWORD_SIX
-  const passwordSeven = process.env.REACT_APP_PASSWORD_SEVEN
-  const passwordEight = process.env.REACT_APP_PASSWORD_EIGHT
-  const passwordEightAlt = process.env.REACT_APP_PASSWORD_EIGHT_ALT
+  const passwordSixAlt = process.env.REACT_APP_PASSWORD_SIX_ALT
+  const passwordSkip = process.env.REACT_APP_PASSWORD_SKIP
 
   function checkPassword(event) {
     event.preventDefault()
@@ -33,41 +32,37 @@ export default function PasswordInput() {
         .value.toLowerCase()
     }
 
-    if (passwordInput === passwordEight || passwordInput === passwordEightAlt) {
+    if (passwordInput === passwordSix || passwordInput === passwordSixAlt) {
       navigate('/welcome', { replace: true })
     } else {
-      if (pathname === '/escape1') {
+      if (pathname === '/password') {
         passwordInput === passwordOne
           ? navigate('/poem', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/poem') {
         passwordInput === passwordTwo
-          ? navigate('/escape3', { replace: true })
-          : alert('Oops, try again!')
-      } else if (pathname === '/escape3') {
-        passwordInput === passwordThree
           ? navigate('/pigpen', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/pigpen') {
-        passwordInput === passwordFour
+        passwordInput === passwordThree
           ? navigate('/science', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/science') {
-        passwordInput === passwordFive
+        passwordInput === passwordFour
           ? navigate('/maths', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/maths') {
-        passwordInput === passwordSix
-          ? navigate('/escape7', { replace: true })
-          : alert('Oops, try again!')
-      } else if (pathname === '/escape7') {
-        passwordInput === passwordSeven
+        passwordInput === passwordFive
           ? navigate('/riddle', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/riddle') {
-        passwordInput === passwordEight || passwordInput === passwordEightAlt
+        passwordInput === passwordSix || passwordInput === passwordSixAlt
           ? navigate('/welcome', { replace: true })
           : alert('Oops, try again!')
+      } else if (pathname === '/') {
+        passwordInput === passwordSkip
+          ? navigate('/welcome', { replace: true })
+          : alert('Oops, check your email to confirm this password!')
       }
     }
   }
@@ -96,9 +91,11 @@ export default function PasswordInput() {
       )}
       <SubmitButton value='Submit' />
       <br />
-      <SmallText>
-        All the clues you need are on (or linked to from) this page.
-      </SmallText>
+      {!intro && (
+        <SmallText>
+          All the clues you need are on (or linked to from) this page.
+        </SmallText>
+      )}
     </Form>
   )
 }
