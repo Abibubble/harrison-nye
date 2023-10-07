@@ -18,7 +18,7 @@ export default function RsvpForm() {
   const navigate = useNavigate()
 
   function handleAttendingChange(event) {
-    const attending = event.target.value === 'yes'
+    const attending = event.target.value === 'Yes' && true
     setGuestAttending(attending)
   }
 
@@ -70,15 +70,15 @@ export default function RsvpForm() {
           required
         >
           <option value=''>Please select</option>
-          <option value='yes'>Yes</option>
-          <option value='no'>No</option>
+          <option value='Yes'>Yes</option>
+          <option value='No'>No</option>
         </Select>
         {guestAttending && (
           <>
             <Label for='user_email'>Email</Label>
-            <Input type='email' name='user_email' id='user_email' />
+            <Input type='email' name='user_email' id='user_email' required />
             <Label for='phone_number'>Phone Number</Label>
-            <Input type='tel' name='phone_number' id='phone_number' />
+            <Input type='tel' name='phone_number' id='phone_number' required />
             <Label for='allergy'>Any allergies?</Label>
             <Textarea name='allergy' id='allergy' />
             <Label for='dietary'>Any dietary restrictions?</Label>
