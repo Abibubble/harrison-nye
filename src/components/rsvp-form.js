@@ -208,7 +208,7 @@ const ModalOverlay = styled.div`
 const ModalContainer = styled.div`
   display: ${props => (props.isModalOpen ? 'block' : 'none')};
   z-index: 3;
-  height: 240px;
+  height: calc(${styles.spacer.medium} * 10);
   width: 300px;
   background-color: ${styles.colour.blue};
   position: fixed;
@@ -216,7 +216,7 @@ const ModalContainer = styled.div`
   top: 40%;
   transform: translate(-50%, -50%);
   padding: ${styles.spacer.medium};
-  border: 4px solid ${styles.colour.darkBlue};
+  border: ${styles.spacer.fine} solid ${styles.colour.darkBlue};
   border-radius: ${styles.spacer.small};
 `
 

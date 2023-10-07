@@ -6,6 +6,7 @@ export default function SubmitButton({ value }) {
 }
 
 const Button = styled.input`
+  cursor: pointer;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin: ${styles.spacer.tiny};
   border: 6px solid;

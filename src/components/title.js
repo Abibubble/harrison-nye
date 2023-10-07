@@ -21,4 +21,8 @@ const StyledTitle = styled.h1`
     ${styles.colour.darkBlue},
     ${styles.colour.darkPurple}
   );
+
+  @media (min-width: 560px) {
+    margin-top: ${styles.spacer.large};
+  }
 `

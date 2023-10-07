@@ -71,7 +71,7 @@ export default function PasswordInput({ intro = false }) {
   const dials = [1, 2, 3, 4]
 
   return (
-    <Form onSubmit={checkPassword}>
+    <Form onSubmit={checkPassword} intro={intro}>
       <Label for='password'>Enter here:</Label>
       {window.location.pathname === '/science' ||
       window.location.pathname === '/maths' ? (
@@ -107,6 +107,8 @@ const Form = styled.form`
   @media (min-width: ${styles.breakpoint.medium}) {
     margin: ${styles.spacer.medium} 0;
   }
+
+  ${props => props.intro && `margin: ${styles.spacer.medium} 0 0;`}
 `
 
 const Label = styled.label`
