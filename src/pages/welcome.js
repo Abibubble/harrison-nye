@@ -22,7 +22,9 @@ export default function Welcome() {
           <Link href='/day-plan'>Day plan</Link>
           <Link href='/dress-code'>Dress code</Link>
           <Link href='/gift'>Wedding gifts</Link>
-          <Link href='/parking-accommodation'>Parking & Accommodation</Link>
+          <Link href='/parking'>Parking</Link>
+          <Link href='/accommodation'>Accommodation</Link>
+          <Link href='/information'>Information</Link>
         </LinkWrapper>
       </PageSection>
     </Wrapper>
@@ -55,7 +57,12 @@ const LinkWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
-  @media screen and (min-width: 653px) {
+  @media screen and (min-width: 455px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: ${styles.breakpoint.medium}) {
+    width: 75%;
+    margin: 0 auto;
   }
 `

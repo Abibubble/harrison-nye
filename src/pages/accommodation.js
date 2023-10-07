@@ -6,27 +6,11 @@ import PageSection from '../components/page-section'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function ParkingAccommodation() {
+export default function Accommodation() {
   return (
     <Wrapper wedding>
       <PageSection>
-        <Title>Parking & Accommodation</Title>
-        <Subheading>Parking</Subheading>
-        <Text>
-          Unfortunately there isn't much parking space at The Woodman, and we
-          recommend that you don't try to park in their car park. There is a
-          small amount of free parking down the nearby side roads.
-        </Text>
-        <Text>
-          Alternatively, there is a car park near Eastcote station, and the 282
-          bus will take you to directly outside The Woodman.
-        </Text>
-        <Text>
-          If you are arriving by public transport, Eastcote station is on the
-          Uxbridge branch of the Metropolitan line, followed by the 282 bus to
-          take you to The Woodman.
-        </Text>
-        <Subheading>Accommodation</Subheading>
+        <Title>Accommodation</Title>
         <Text>
           If you're travelling from further afield (or simply don't fancy a long
           taxi ride home), there are a few hotels nearby:
@@ -77,12 +61,8 @@ export default function ParkingAccommodation() {
   )
 }
 
-const Subheading = styled.h2`
-  margin: ${styles.spacer.tiny} 0;
-`
-
 const Text = styled.p`
-  margin-bottom: ${styles.spacer.small};
+  margin: ${styles.spacer.small} 0;
 `
 
 const Link = styled.a`

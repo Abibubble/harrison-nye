@@ -10,7 +10,7 @@ export default function Link({ ...props }) {
 }
 
 const Container = styled.div`
-  width: 75%;
+  width: 100%;
   height: ${styles.spacer.large};
   font-size: 1.5em;
   margin: 0 auto;
@@ -22,8 +22,9 @@ const Container = styled.div`
 `
 
 const Button = styled.a`
+  display: inline-block;
   text-decoration: none;
-  width: 100%;
+  width: 75%;
   color: ${styles.colour.black};
   padding: ${styles.spacer.fine} ${styles.spacer.tiny} 0;
   border-bottom: ${styles.spacer.mini} solid ${styles.colour.black};
