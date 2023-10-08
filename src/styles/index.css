@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../fonts/dancing-script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: 100%;
   min-height: 100dvh;

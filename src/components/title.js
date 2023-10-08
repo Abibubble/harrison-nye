@@ -1,8 +1,12 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
 
-export default function Title({ ...props }) {
-  return <StyledTitle>{props.children}</StyledTitle>
+export default function Title({ invite, className, ...props }) {
+  return (
+    <StyledTitle className={className} invite={invite}>
+      {props.children}
+    </StyledTitle>
+  )
 }
 
 const StyledTitle = styled.h1`
@@ -22,7 +26,12 @@ const StyledTitle = styled.h1`
     ${styles.colour.darkPurple}
   );
 
+  ${props =>
+    props.invite &&
+    `font-family: 'Dancing Script', Arial, Helvetica, sans-serif;`}
+
   @media (min-width: 560px) {
     margin-top: ${styles.spacer.large};
+    max-width: 500px;
   }
 `

@@ -43,7 +43,7 @@ const Image = styled.img`
   }
 
   @media screen and (min-width: 615px) {
-    width: 80%;
+    width: 85%;
   }
 
   @media screen and (min-width: ${styles.breakpoint.medium}) {
