@@ -11,6 +11,10 @@ export default function DayPlan() {
     <Wrapper wedding>
       <PageSection>
         <Title>Day Plan</Title>
+        <InfoText>
+          This information may change closer to the date, please check back in
+          the days leading up to the wedding for confirmed timings
+        </InfoText>
         <PlanGrid>
           <p>11.30am</p>
           <p>Arrive at Hillingdon Civic Centre</p>
@@ -32,6 +36,12 @@ export default function DayPlan() {
     </Wrapper>
   )
 }
+
+const InfoText = styled.p`
+  margin: ${styles.spacer.medium} auto;
+  text-align: center;
+  font-size: 1rem;
+`
 
 const PlanGrid = styled.div`
   margin: ${styles.spacer.medium} auto;
