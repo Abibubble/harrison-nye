@@ -6,7 +6,7 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Escape2() {
+export default function Poem() {
   return (
     <Wrapper escape>
       <PageSection>

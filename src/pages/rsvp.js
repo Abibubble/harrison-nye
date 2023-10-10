@@ -31,7 +31,12 @@ export default function Rsvp() {
 }
 
 const Info = styled.p`
-  margin: ${styles.spacer.medium} 0;
+  margin: ${styles.spacer.medium} auto;
+  max-width: 500px;
+
+  @media screen and (min-width: ${styles.breakpoint.medium}) {
+    font-size: 1.5rem;
+  }
 `
 
 const InfoText = styled(Info)`

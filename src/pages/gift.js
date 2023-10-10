@@ -4,6 +4,7 @@ import styles from '../styles/styles'
 import Button from '../components/button'
 import Link from '../components/link'
 import PageSection from '../components/page-section'
+import Text from '../components/text'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
@@ -45,14 +46,11 @@ export default function Gift() {
   )
 }
 
-const Text = styled.p`
-  margin: ${styles.spacer.small} auto;
-`
-
 const StyledLink = styled(Link)`
   background-color: ${styles.colour.transparentWhite};
   margin-bottom: ${styles.spacer.medium};
   height: fit-content;
+  max-width: 400px;
 
   & a {
     border-bottom: none;
@@ -60,10 +58,14 @@ const StyledLink = styled(Link)`
 
   @media (min-width: 374px) {
     margin-bottom: ${styles.spacer.large};
+
+    & a {
+      font-size: 1.5rem;
+    }
   }
 
   @media (min-width: ${styles.breakpoint.medium}) {
-    margin-bottom: 0;
+    margin-bottom: ${styles.spacer.medium};
   }
 `
 

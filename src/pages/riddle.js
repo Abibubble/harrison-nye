@@ -6,7 +6,7 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Escape6() {
+export default function Riddle() {
   return (
     <Wrapper escape>
       <PageSection>

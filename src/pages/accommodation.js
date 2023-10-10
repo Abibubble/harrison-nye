@@ -3,6 +3,7 @@ import styles from '../styles/styles'
 
 import Button from '../components/button'
 import PageSection from '../components/page-section'
+import Text from '../components/text'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
@@ -60,10 +61,6 @@ export default function Accommodation() {
     </Wrapper>
   )
 }
-
-const Text = styled.p`
-  margin: ${styles.spacer.small} 0;
-`
 
 const Link = styled.a`
   &:visited {

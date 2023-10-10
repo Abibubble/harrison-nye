@@ -1,8 +1,6 @@
-import styled from 'styled-components'
-import styles from '../styles/styles'
-
 import Button from '../components/button'
 import PageSection from '../components/page-section'
+import Text from '../components/text'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
@@ -27,7 +25,3 @@ export default function Info() {
     </Wrapper>
   )
 }
-
-const Text = styled.p`
-  margin: ${styles.spacer.small} 0;
-`

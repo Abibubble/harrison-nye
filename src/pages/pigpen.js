@@ -12,7 +12,7 @@ import Wrapper from '../components/wrapper'
 
 import PigpenImage from '../images/pigpen.png'
 
-export default function Escape3() {
+export default function Pigpen() {
   const [isReady, setIsReady] = useState(false)
 
   useEffect(() => {
@@ -27,7 +27,11 @@ export default function Escape3() {
           Well done! For the next one, solve the pigpen cipher below:
         </Intro>
         <Clue>
-          {isReady ? <Pigpen>gerbil</Pigpen> : <Loading>Loading...</Loading>}
+          {isReady ? (
+            <PigpenText>gerbil</PigpenText>
+          ) : (
+            <Loading>Loading...</Loading>
+          )}
         </Clue>
         <PasswordInput />
         <Image src={PigpenImage} alt='pigpen decrypt' />
@@ -36,13 +40,18 @@ export default function Escape3() {
   )
 }
 
-const Pigpen = styled(ClueText)`
+const PigpenText = styled(ClueText)`
   font-family: 'pigpen', sans-serif;
   font-size: 2.4rem;
   padding: ${styles.spacer.large} ${styles.spacer.tiny} ${styles.spacer.large};
 
+  @media screen and (min-width: 500px) {
+    padding: ${styles.spacer.medium} ${styles.spacer.fine}
+      ${styles.spacer.medium};
+  }
+
   @media screen and (min-width: ${styles.breakpoint.medium}) {
-    font-size: 4rem !important;
+    font-size: 3rem !important;
   }
 `
 
@@ -53,4 +62,8 @@ const Loading = styled.p`
 const Image = styled.img`
   background-color: ${styles.colour.transparentWhite};
   width: 100%;
+
+  @media screen and (min-width: ${styles.breakpoint.small}) {
+    width: 80%;
+  }
 `

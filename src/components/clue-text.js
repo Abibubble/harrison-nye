@@ -17,10 +17,10 @@ const StyledClueText = styled.p`
   vertical-align: middle;
 
   @media screen and (min-width: ${styles.breakpoint.small}) {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   @media screen and (min-width: ${styles.breakpoint.medium}) {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 `

@@ -9,7 +9,7 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Escape4() {
+export default function Science() {
   return (
     <Wrapper escape>
       <PageSection>

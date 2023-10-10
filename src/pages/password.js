@@ -6,29 +6,19 @@ import PasswordInput from '../components/password-input'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Escape5() {
+export default function Password() {
   return (
     <Wrapper escape>
       <PageSection>
         <Title>Bubble & Squeak</Title>
-        <Intro>Well done! Let's keep the maths going:</Intro>
+        <Intro>Let's start easy:</Intro>
         <Clue>
           <ClueText>
-            There are 4 digits in the answer. Use these clues to fill in the
-            number.
-            <br />
-            <br />
-            The first number is the third number times 2
-            <br />
-            The second number is nothing
-            <br />
-            The third number is the second number plus 1
-            <br />
-            The fourth number is the first number times 3
+            Try to guess our <em>password</em>
           </ClueText>
         </Clue>
+        <PasswordInput />
       </PageSection>
-      <PasswordInput />
     </Wrapper>
   )
 }

@@ -14,10 +14,6 @@ const StyledIntro = styled.h2`
   }
 
   @media screen and (min-width: ${styles.breakpoint.medium}) {
-    margin: ${styles.spacer.large} 0;
-  }
-
-  @media screen and (min-width: ${styles.breakpoint.large}) {
-    margin: ${styles.spacer.huge} 0;
+    margin: 32px 0;
   }
 `

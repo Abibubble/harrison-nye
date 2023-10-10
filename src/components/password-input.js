@@ -140,9 +140,15 @@ const Input = styled.input`
 const SmallText = styled.p`
   font-size: 1rem;
   font-style: italic;
+  max-width: 400px;
+  margin: ${styles.spacer.tiny} auto 0;
 
   @media screen and (min-width: ${styles.breakpoint.small}) {
     font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: 500px) {
+    margin: ${styles.spacer.small} auto 0;
   }
 `
 

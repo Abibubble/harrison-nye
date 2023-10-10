@@ -41,6 +41,11 @@ const InfoText = styled.p`
   margin: ${styles.spacer.medium} auto;
   text-align: center;
   font-size: 1rem;
+  max-width: 500px;
+
+  @media screen and (min-width: ${styles.breakpoint.medium}) {
+    font-size: 1.2rem;
+  }
 `
 
 const PlanGrid = styled.div`
@@ -48,4 +53,5 @@ const PlanGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: ${styles.spacer.tiny};
+  max-width: 550px;
 `
