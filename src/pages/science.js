@@ -18,7 +18,23 @@ export default function Science() {
           Well done! Now, some science and maths to get your brain going:
         </Intro>
         <Clue>
-          <ClueText>((Au + Ag) * Ne) - Cs</ClueText>
+          <ClueText>
+            Add together Gold and Silver
+            <br />
+            Times them by Neon
+            <br />
+            Take away Caesium
+          </ClueText>
+          <ClueText>
+            <br />
+            Gold - Au
+            <br />
+            Silver - Ag
+            <br />
+            Neon - Ne
+            <br />
+            Caesium - Cs
+          </ClueText>
         </Clue>
         <PasswordInput />
         <Link href='https://www.google.com/search?q=periodic+table'>
