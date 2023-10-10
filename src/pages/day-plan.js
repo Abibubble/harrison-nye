@@ -26,7 +26,7 @@ export default function DayPlan() {
           <p>Arrive at The Woodman</p>
           <p>3pm</p>
           <p>Reception</p>
-          <p>6pm</p>
+          <p>TBC</p>
           <p>Food</p>
           <p>10pm</p>
           <p>Carriages</p>

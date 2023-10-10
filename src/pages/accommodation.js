@@ -28,16 +28,6 @@ export default function Accommodation() {
         </Text>
         <Text>
           <Link
-            href='https://www.premierinn.com/gb/en/hotels/england/hertfordshire/rickmansworth/rickmansworth.html'
-            rel='noopener noreferrer'
-            target='_blank'
-          >
-            Premier Inn Rickmansworth
-          </Link>{' '}
-          is a short taxi ride away.
-        </Text>
-        <Text>
-          <Link
             href='https://www.thetudorhotel.com/'
             rel='noopener noreferrer'
             target='_blank'
@@ -47,9 +37,19 @@ export default function Accommodation() {
           is approximately a 15 minute walk away.
         </Text>
         <Text>
-          There are many other hotels in the area, and these are the least
-          pricey options in the area. If these three options don't suit you,
-          feel free to take a look for other places.
+          <Link
+            href='https://www.premierinn.com/gb/en/hotels/england/hertfordshire/rickmansworth/rickmansworth.html'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            Premier Inn Rickmansworth
+          </Link>{' '}
+          is a short taxi ride away.
+        </Text>
+        <Text>
+          There are many other hotels in the area, and these will likely be the
+          least expensive. If these three options don't suit you, feel free to
+          take a look for other places.
         </Text>
         <Text>
           The Woodman's postcode is HA5 2PR, and bear in mind that it will be a

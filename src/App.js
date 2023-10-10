@@ -12,7 +12,7 @@ import Escape6 from './pages/escape6'
 import Gift from './pages/gift'
 import Home from './pages/home'
 import Info from './pages/info'
-import Parking from './pages/parking'
+import Transport from './pages/transport'
 import Rsvp from './pages/rsvp'
 import Welcome from './pages/welcome'
 
@@ -32,7 +32,7 @@ export default function App() {
         <Route path='/gift' element={<Gift />} />
         <Route exact path='/' element={<Home />} />
         <Route exact path='/information' element={<Info />} />
-        <Route path='/parking' element={<Parking />} />
+        <Route path='/transport' element={<Transport />} />
         <Route path='/rsvp' element={<Rsvp />} />
         <Route path='/welcome' element={<Welcome />} />
       </Routes>

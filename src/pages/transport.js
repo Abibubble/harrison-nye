@@ -6,11 +6,11 @@ import PageSection from '../components/page-section'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
-export default function Parking() {
+export default function Transport() {
   return (
     <Wrapper wedding>
       <PageSection>
-        <Title>Parking</Title>
+        <Title>Transport</Title>
         <Text>
           Unfortunately there isn't a lot of parking space at The Woodman, and
           we recommend that you don't try to park in their car park. There is a

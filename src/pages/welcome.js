@@ -22,7 +22,7 @@ export default function Welcome() {
           <Link href='/day-plan'>Day plan</Link>
           <Link href='/dress-code'>Dress code</Link>
           <Link href='/gift'>Wedding gifts</Link>
-          <Link href='/parking'>Parking</Link>
+          <Link href='/transport'>Transport</Link>
           <Link href='/accommodation'>Accommodation</Link>
           <Link href='/information'>Information</Link>
         </LinkWrapper>

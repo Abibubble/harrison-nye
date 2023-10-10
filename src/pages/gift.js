@@ -22,10 +22,23 @@ export default function Gift() {
           There is no pressure to get us a wedding gift, but if you would like
           to, we'd love a donation towards our honeymoon fund.
         </Text>
-        <StyledLink href='https://paypal.me/theharrisonnyes?country.x=GB&locale.x=en_GB'>
-          Donate to our honeymoon fund on PayPal
+        <StyledLink
+          href='https://paypal.me/theharrisonnyes?country.x=GB&locale.x=en_GB'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Click here to donate to our honeymoon fund on PayPal
         </StyledLink>
-        <QRCode src={QRCodeImage} alt='QR code to take to PayPal donate page' />
+        <a
+          href='https://paypal.me/theharrisonnyes?country.x=GB&locale.x=en_GB'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <QRCode
+            src={QRCodeImage}
+            alt='QR code to take to PayPal donate page'
+          />
+        </a>
         <Button href='/welcome'>Back</Button>
       </PageSection>
     </Wrapper>
@@ -37,7 +50,13 @@ const Text = styled.p`
 `
 
 const StyledLink = styled(Link)`
-  margin-bottom: ${styles.spacer.huge};
+  background-color: ${styles.colour.transparentWhite};
+  margin-bottom: ${styles.spacer.medium};
+  height: fit-content;
+
+  & a {
+    border-bottom: none;
+  }
 
   @media (min-width: 374px) {
     margin-bottom: ${styles.spacer.large};

@@ -15,6 +15,7 @@ export default function PasswordInput({ intro = false }) {
   const passwordSix = process.env.REACT_APP_PASSWORD_SIX
   const passwordSixAlt = process.env.REACT_APP_PASSWORD_SIX_ALT
   const passwordSkip = process.env.REACT_APP_PASSWORD_SKIP
+  const passwordSkipAlt = process.env.REACT_APP_PASSWORD_SKIP_ALT
 
   function checkPassword(event) {
     event.preventDefault()
@@ -30,6 +31,7 @@ export default function PasswordInput({ intro = false }) {
       passwordInput = document
         .getElementById('password-input')
         .value.toLowerCase()
+      passwordInput = passwordInput.replace(/\s/g, '')
     }
 
     if (passwordInput === passwordSix || passwordInput === passwordSixAlt) {
@@ -60,7 +62,7 @@ export default function PasswordInput({ intro = false }) {
           ? navigate('/welcome', { replace: true })
           : alert('Oops, try again!')
       } else if (pathname === '/') {
-        passwordInput === passwordSkip
+        passwordInput === passwordSkip || passwordInput === passwordSkipAlt
           ? navigate('/welcome', { replace: true })
           : alert('Oops, check your email to confirm this password!')
       }
@@ -93,7 +95,8 @@ export default function PasswordInput({ intro = false }) {
       <br />
       {!intro && (
         <SmallText>
-          All the clues you need are on (or linked to from) this page.
+          All the clues you need are on (or linked to from) this page. If you
+          need help, feel free to ask Abi or Conor.
         </SmallText>
       )}
     </Form>
