@@ -5,6 +5,7 @@ import Button from '../components/button'
 import Link from '../components/link'
 import PageSection from '../components/page-section'
 import Text from '../components/text'
+import TextWrapper from '../components/text-wrapper'
 import Title from '../components/title'
 import Wrapper from '../components/wrapper'
 
@@ -15,14 +16,16 @@ export default function Gift() {
     <Wrapper wedding>
       <PageSection>
         <Title>Wedding Gifts</Title>
-        <Text>
-          We've been together for 8 years, and living together for most of
-          those, so there aren't any traditional wedding gifts that we need.
-        </Text>
-        <Text>
-          There is no pressure to get us a wedding gift, but if you would like
-          to, we'd love a donation towards our honeymoon fund.
-        </Text>
+        <TextWrapper>
+          <Text>
+            We've been together for 8 years, and living together for most of
+            those, so there aren't any traditional wedding gifts that we need.
+          </Text>
+          <Text>
+            There is no pressure to get us a wedding gift, but if you would like
+            to, we'd love a donation towards our honeymoon fund.
+          </Text>
+        </TextWrapper>
         <StyledLink
           href='https://paypal.me/theharrisonnyes?country.x=GB&locale.x=en_GB'
           target='_blank'
@@ -51,6 +54,9 @@ const StyledLink = styled(Link)`
   margin-bottom: ${styles.spacer.medium};
   height: fit-content;
   max-width: 400px;
+  border: 6px solid;
+  border-image-slice: 1;
+  border-width: ${styles.spacer.fine};
 
   & a {
     border-bottom: none;

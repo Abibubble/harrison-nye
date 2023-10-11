@@ -53,9 +53,13 @@ const Image = styled.img`
 `
 
 const LinkWrapper = styled.div`
-  padding: ${styles.spacer.small};
+  padding: ${styles.spacer.small} ${styles.spacer.small} 0;
   display: grid;
   grid-template-columns: 1fr;
+  background-color: ${styles.colour.transparentWhite};
+  border-radius: ${styles.spacer.tiny};
+  max-width: 486px;
+  margin: 0 auto;
 
   @media screen and (min-width: 455px) {
     grid-template-columns: repeat(2, 1fr);

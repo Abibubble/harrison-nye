@@ -12,6 +12,7 @@ const guestList = [
   'Natasha Chick',
   'Nigel Harrison',
   'Olivia Stevens',
+  'Patricia Leslie',
   'Paul Tabb',
   'Philip Anderson',
   'Richard Harrison',
@@ -20,7 +21,6 @@ const guestList = [
   'Sarah Nye',
   'Sue Stevens',
   'Tommie Anderson',
-  'Trisha Leslie',
 ]
 
 export default guestList
