@@ -18,8 +18,8 @@ export default function Home() {
         <Intro>
           We know that not all of you will be familiar with escape room puzzles.
           <br />
-          If you'd like to avoid the puzzles, use the password we've sent you in
-          the password input box below.
+          If you'd like to avoid the puzzles, use the secret phrase we've sent
+          you in the input box below.
           <br />
           If you're up for a challenge, click the "Let's go!" button.
         </Intro>
