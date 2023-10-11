@@ -19,6 +19,10 @@ export default function Info() {
         <Text>
           There will be a cash / card bar available for the rest of the evening
         </Text>
+        <Text>
+          You're more than welcome to take photos at any time, we just request
+          that you don't get in the way of our lovely photographer, Gino.
+        </Text>
         <Text>We look forward to seeing you there!</Text>
         <Button href='/welcome'>Back</Button>
       </PageSection>
