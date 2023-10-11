@@ -37,7 +37,11 @@ export default function Science() {
           </ClueText>
         </Clue>
         <PasswordInput />
-        <Link href='https://www.google.com/search?q=periodic+table'>
+        <Link
+          href='https://www.google.com/search?q=periodic+table'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           Pssst... You might need Google for this one!
         </Link>
       </PageSection>

@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import styles from '../styles/styles'
 
-export default function Link({ ...props }) {
+export default function Link({ href, target, rel, ...props }) {
   return (
     <Container className={props.className}>
-      <Button href={props.href}>{props.children}</Button>
+      <Button href={href} target={target} rel={rel}>
+        {props.children}
+      </Button>
     </Container>
   )
 }
