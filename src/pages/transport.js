@@ -13,6 +13,20 @@ export default function Transport() {
     <Wrapper wedding>
       <PageSection>
         <Title>Transport</Title>
+        <TextWrapper>
+          <Text>
+            Both Uxbridge and Pinner are in the Ultra Low Emission Zone (ULEZ).
+          </Text>
+          <Text>
+            If you have a non-compliant car, it will cost £12.50, which covers
+            from midnight until midnight of that day (24 hours). If you're in
+            the area beyond midnight, you'll have to pay for a second day.
+          </Text>
+          <Text>
+            Alternatively, you can park outside the ULEZ and car share to cut
+            down on costs (and petrol / diesel).
+          </Text>
+        </TextWrapper>
         <Subtitle>Hillingdon Civic Centre</Subtitle>
         <TextWrapper>
           <Text>
