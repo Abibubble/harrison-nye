@@ -19,8 +19,9 @@ export default function Rsvp() {
         <RsvpForm />
         <Button href='/welcome'>Back</Button>
         <InfoText>
-          Please RSVP by 31st December 2023. If you have any questions, please
-          email us at{' '}
+          Please RSVP by 31st December 2023. Partners and children are welcome
+          by named invitation only. If you have any questions, please email us
+          at{' '}
           <EmailLink href='mailto:the.harrison.nyes@gmail.com'>
             the.harrison.nyes@gmail.com
           </EmailLink>

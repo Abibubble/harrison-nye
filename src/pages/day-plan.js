@@ -19,16 +19,18 @@ export default function DayPlan() {
           </InfoText>
           <PlanGrid>
             <p>11.30am</p>
-            <p>Arrive at Hillingdon Civic Centre</p>
+            <p>Arrive at Hillingdon Civic Centre and take your seats</p>
             <p>12pm</p>
-            <p>Ceremony</p>
+            <p>Ceremony begins</p>
             <p>1pm</p>
             <p>Photos</p>
             <p>2.30pm</p>
             <p>Arrive at The Woodman</p>
             <p>3pm</p>
-            <p>Reception</p>
-            <p>TBC</p>
+            <p>Lunch</p>
+            <p>4pm</p>
+            <p>Reception, Evening guests arrive</p>
+            <p>6pm</p>
             <p>Food</p>
             <p>10pm</p>
             <p>Carriages</p>

@@ -19,8 +19,8 @@ export default function Transport() {
           </Text>
           <Text>
             If you have a non-compliant car, it will cost £12.50, which covers
-            from midnight until midnight of that day (24 hours). If you're in
-            the area beyond midnight, you'll have to pay for a second day.
+            from midnight until midnight (24 hours). If you're in the area
+            beyond midnight, you'll have to pay for a second day.
           </Text>
           <Text>
             Alternatively, you can park outside the ULEZ and car share to cut
@@ -52,8 +52,9 @@ export default function Transport() {
             a small amount of free parking down the nearby side roads.
           </Text>
           <Text>
-            Alternatively, there is a car park near Eastcote station, and the
-            282 bus will take you to directly outside The Woodman.
+            Alternatively, there is a car park near Eastcote station,which is
+            either a short walk away, or you can get the 282 bus, which will
+            take you to directly outside The Woodman.
           </Text>
           <Text>
             If you are arriving by public transport, Eastcote station is on the
