@@ -19,7 +19,7 @@ export default function DressCode() {
             Heels aren't required, so feel free to wear flats for comfort
           </Text>
           <Text>
-            As the reception will be in marquees outside, make sure you bring
+            As the reception will be mostly outside, make sure you bring
             something warm for the evening
           </Text>
           <Text>And don't forget your dancing shoes!</Text>

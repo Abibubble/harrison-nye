@@ -24,16 +24,10 @@ export default function Info() {
             Food will be confirmed closer to the date, but all allergies and
             dietary requirements will be catered for
           </Text>
-          <Text>
-            Cocktails and mocktails will be provided on arrival to The Woodman
-          </Text>
-          <Text>
-            There will be a cash / card bar available for the rest of the
-            evening
-          </Text>
+          <Text>There will be a cash / card bar available</Text>
           <Text>
             Partners and children are welcome by named invitation only. If
-            you're unsure, named guests are included in the RSVP dropdown.
+            you're unsure, named guests are shown in the RSVP dropdown.
           </Text>
           <Text>
             You're more than welcome to take photos at any time, we just request
