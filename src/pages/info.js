@@ -21,8 +21,8 @@ export default function Info() {
             about the order of the day.
           </Text>
           <Text>
-            Food will be confirmed closer to the date, but all allergies and
-            dietary requirements will be catered for
+            Lunch will be a buffet, and dinner will be an indoor BBQ. All
+            allergies and dietary requirements will be catered for
           </Text>
           <Text>There will be a cash / card bar available</Text>
           <Text>
@@ -30,8 +30,12 @@ export default function Info() {
             you're unsure, named guests are shown in the RSVP dropdown.
           </Text>
           <Text>
-            You're more than welcome to take photos at any time, we just request
-            that you don't get in the way of our lovely photographer, Gino.
+            During the ceremony, please do not take photos until after the
+            ceremony is over. There will be time for photos in the Four Seasons
+            room, as well as photos outside in their courtyard. Other than
+            during the ceremony, you're more than welcome to take photos at any
+            time, we just request that you don't get in the way of our lovely
+            photographer, Gino.
           </Text>
           <Text>
             After the wedding, we will send out a link where we'd love for you

@@ -26,13 +26,13 @@ export default function DayPlan() {
             <p>Photos</p>
             <p>2.30pm</p>
             <p>Arrive at The Woodman</p>
-            <p>TBC</p>
-            <p>Lunch</p>
+            <p>3pm</p>
+            <p>Lunch (buffet)</p>
             <p>4pm</p>
             <p>Reception, Evening guests arrive</p>
-            <p>TBC</p>
-            <p>Food</p>
-            <p>10pm</p>
+            <p>6pm</p>
+            <p>Dinner (BBQ)</p>
+            <p>11pm</p>
             <p>Carriages</p>
           </PlanGrid>
         </TextWrapper>

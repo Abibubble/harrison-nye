@@ -52,9 +52,9 @@ export default function Transport() {
             a small amount of free parking down the nearby side roads.
           </Text>
           <Text>
-            Alternatively, there is a car park near Eastcote station,which is
-            either a short walk away, or you can get the 282 bus, which will
-            take you to directly outside The Woodman.
+            Alternatively, there is a car park near Eastcote station, which is
+            either a short walk away, or you can get the 282 bus which will take
+            you to directly outside The Woodman.
           </Text>
           <Text>
             If you are arriving by public transport, Eastcote station is on the
