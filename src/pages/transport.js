@@ -13,6 +13,7 @@ export default function Transport() {
     <Wrapper wedding>
       <PageSection>
         <Title>Transport</Title>
+        <Subtitle>Driving</Subtitle>
         <TextWrapper>
           <Text>
             Both Uxbridge and Pinner are in the Ultra Low Emission Zone (ULEZ).
@@ -32,7 +33,7 @@ export default function Transport() {
           <Text>
             There is no parking at the Hillingdon Civic Centre. However, The
             Chimes multi-storey car park is only a minute's walk away, and costs
-            £2.70 for parking on Sundays. The postcode for this is UB8 1TP.
+            £3 for parking on Sundays. The postcode for this is UB8 1TP.
           </Text>
           <Text>
             The Hillingdon Civic Centre is a 5 minute walk from Uxbridge
@@ -48,8 +49,8 @@ export default function Transport() {
         <TextWrapper>
           <Text>
             Unfortunately there isn't a lot of parking space at The Woodman, and
-            we recommend that you don't try to park in their car park. There is
-            a small amount of free parking down the nearby side roads.
+            we ask that you don't try to park in their car park. There is a
+            small amount of free parking down the nearby side roads.
           </Text>
           <Text>
             Alternatively, there is a car park near Eastcote station, which is
