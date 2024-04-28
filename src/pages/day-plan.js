@@ -22,16 +22,16 @@ export default function DayPlan() {
             <p>Arrive at Hillingdon Civic Centre and take your seats</p>
             <p>12pm</p>
             <p>Ceremony begins</p>
-            <p>1pm</p>
-            <p>Photos</p>
-            <p>2.30pm</p>
+            <p>12.40pm</p>
+            <p>
+              Ceremony ends. Bubble exit into the courtyard, followed by photos
+            </p>
+            <p>1.30pm</p>
             <p>Arrive at The Woodman</p>
-            <p>3pm</p>
+            <p>2.30pm</p>
             <p>Lunch (buffet)</p>
             <p>4pm</p>
             <p>Reception, Evening guests arrive</p>
-            <p>5.45pm</p>
-            <p>Speeches</p>
             <p>6pm</p>
             <p>Dinner (indoor BBQ)</p>
             <p>7pm</p>

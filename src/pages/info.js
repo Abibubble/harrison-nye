@@ -22,7 +22,9 @@ export default function Info() {
           </Text>
           <Text>
             Lunch will be a buffet, and dinner will be an indoor BBQ. All
-            allergies and dietary requirements will be catered for
+            allergies and dietary requirements will be catered for. Please see
+            Dale on the day if you have allergies or dietary requirements so
+            that he knows who you are.
           </Text>
           <Text>There will be a cash / card bar available</Text>
           <Text>
